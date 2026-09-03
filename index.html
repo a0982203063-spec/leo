@@ -340,7 +340,7 @@
           <span class="text-slate-300">|</span>
           <a id="header-591-all-link" href="https://www.591.com.tw/broker45609-sale" target="_blank" rel="noopener noreferrer" 
              class="text-accent-591 hover:text-orange-600 transition-colors flex items-center gap-1">
-            <span>前往 591 店鋪查看全部 <span id="header-591-count">25</span> 筆</span>
+            <span>前往 591 店鋪查看全部 <span id="header-591-count">14</span> 筆</span>
             <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
           </a>
         </div>
@@ -349,7 +349,7 @@
       <!-- 分類篩選按鈕 (Filter Tabs) -->
       <div class="flex flex-wrap items-center justify-start gap-2 mb-8" id="property-tabs">
         <button data-filter="all" class="tab-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-bold border border-slate-200 bg-white text-slate-700 hover:border-brand-700 transition-all">
-          全部精選 (<span id="count-all">25</span>)
+          全部精選 (<span id="count-all">14</span>)
         </button>
         <button data-filter="xitun" class="tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold border border-slate-200 bg-white text-slate-700 hover:border-brand-700 transition-all">
           西屯七期豪宅
@@ -371,30 +371,30 @@
       <!-- 房屋物件卡片網格 (25 筆物件靜態載入) -->
       <div id="properties-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
 
-        <!-- 物件卡片 1 ： 專簽降價！近七期新電梯雙車別墅 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item" data-category="xitun" data-index="1">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20700562.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【專簽降價！近七期新電梯雙車別墅】詳細屋況">
-            <img src="https://img1.591.com.tw/house/2026/08/24/178756598120734108.jpg!800x600.jpg" alt="專簽降價！近七期新電梯雙車別墅" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              西屯區・七期電梯別墅
+        <!-- 物件卡片 #1 (【ＬＥＯ】專簽！近高鐵新三房平車｜高樓層全棟最便宜) -->
+        <div class="prop-item  bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nationwide" data-id="1">
+          <!-- 卡片圖片區 (直接可點擊跳轉 591) -->
+          <a href="https://sale.591.com.tw/home/house/detail/2/20792896.html" target="_blank" rel="noopener noreferrer" class="relative block aspect-[16/10] overflow-hidden bg-slate-100 group/img">
+            <img src="https://img2.591.com.tw/house/2026/08/25/178765121747229006.jpg!800x600.jpg" 
+                 alt="【ＬＥＯ】專簽！近高鐵新三房平車｜高樓層全棟最便宜" 
+                 loading="lazy"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end p-3">
+              <span class="text-xs font-bold text-white flex items-center gap-1 bg-accent-591/90 px-2.5 py-1 rounded-lg backdrop-blur-sm shadow-md">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>前往 591 查看實拍詳情</span>
+              </span>
             </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 3,488 萬
+            <!-- 分類標籤 -->
+            <div class="absolute top-3 left-3 flex items-center gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold shadow-md bg-brand-700 text-white">
+                台中市烏日區
+              </span>
             </div>
-
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <!-- 591 專屬標籤 -->
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-0.5 rounded bg-accent-591 text-white text-[10px] font-bold shadow-sm flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3 h-3"></i> 591實拍
               </span>
             </div>
           </a>
@@ -402,63 +402,82 @@
           <!-- 卡片內容區 -->
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
             <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市西屯區安和東路">台中市西屯區安和東路</span>
-                <span class="font-semibold text-slate-600 font-number">65.7 坪</span>
+              <!-- 標籤組 -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>烏日區</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>浩瀚豐世紀</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>住宅</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>屋齡3年</span>
               </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20700562.html" target="_blank" rel="noopener noreferrer" title="專簽降價！近七期新電梯雙車別墅">
-                  專簽降價！近七期新電梯雙車別墅
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                近七期市政核心，稀有全新電梯別墅，室內大空間附車庫雙車位，格局方正採光極佳，屋主誠售換屋首選。
+              <!-- 物件標題 (點擊直接開 591) -->
+              <a href="https://sale.591.com.tw/home/house/detail/2/20792896.html" target="_blank" rel="noopener noreferrer" class="block">
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                  【ＬＥＯ】專簽！近高鐵新三房平車｜高樓層全棟最便宜
+                </h3>
+              </a>
+              <p class="text-xs text-slate-500 mt-1 truncate flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3 h-3 text-brand-600 flex-shrink-0"></i>
+                <span>台中市烏日區 中山路三段・浩瀚豐世紀</span>
               </p>
             </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                4房2廳4衛 ｜ 車庫雙車位
+
+            <!-- 物件規格參數 (格狀) -->
+            <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">格局</p>
+                <p class="font-bold text-slate-700 mt-0.5">3房2廳2衛</p>
               </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20700562.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">建坪</p>
+                <p class="font-bold text-slate-700 mt-0.5">45.8 坪</p>
               </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 2 ： 專簽可看！近彰化火車站五房21年美透天 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item" data-category="nationwide" data-index="2">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20700811.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【專簽可看！近彰化火車站五房21年美透天】詳細屋況">
-            <img src="https://img1.591.com.tw/house/2026/08/24/178756466222901803.jpg!800x600.jpg" alt="專簽可看！近彰化火車站五房21年美透天" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              彰化市・火車站學區透天
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 1,680 萬
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">樓層/屋齡</p>
+                <p class="font-bold text-slate-700 mt-0.5 truncate">15/15 樓</p>
+              </div>
             </div>
 
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <!-- 價格與行動按鈕 -->
+            <div class="pt-2 flex items-center justify-between">
+              <div>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-2xl font-black text-rose-600">1,500</span>
+                  <span class="text-xs font-bold text-rose-600">萬</span>
+                </div>
+                <span class='text-[11px] text-slate-400 font-medium'>單價約 32.8 萬/坪</span>
+              </div>
+              <a href="https://sale.591.com.tw/home/house/detail/2/20792896.html" target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-brand-700 hover:bg-brand-800 transition-colors flex items-center gap-1 shadow-sm">
+                <span>看詳情</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 物件卡片 #2 (【ＬＥＯ】專簽可看！文化路上三樓臨路超值透天) -->
+        <div class="prop-item  bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nationwide" data-id="2">
+          <!-- 卡片圖片區 (直接可點擊跳轉 591) -->
+          <a href="https://sale.591.com.tw/home/house/detail/2/20773456.html" target="_blank" rel="noopener noreferrer" class="relative block aspect-[16/10] overflow-hidden bg-slate-100 group/img">
+            <img src="https://img2.591.com.tw/house/2026/08/21/178730454688131605.jpg!800x600.jpg" 
+                 alt="【ＬＥＯ】專簽可看！文化路上三樓臨路超值透天" 
+                 loading="lazy"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end p-3">
+              <span class="text-xs font-bold text-white flex items-center gap-1 bg-accent-591/90 px-2.5 py-1 rounded-lg backdrop-blur-sm shadow-md">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>前往 591 查看實拍詳情</span>
+              </span>
+            </div>
+            <!-- 分類標籤 -->
+            <div class="absolute top-3 left-3 flex items-center gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold shadow-md bg-brand-700 text-white">
+                南投縣南投市
+              </span>
+            </div>
+            <!-- 591 專屬標籤 -->
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-0.5 rounded bg-accent-591 text-white text-[10px] font-bold shadow-sm flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3 h-3"></i> 591實拍
               </span>
             </div>
           </a>
@@ -466,63 +485,81 @@
           <!-- 卡片內容區 -->
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
             <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="彰化縣彰化市辭修路">彰化縣彰化市辭修路</span>
-                <span class="font-semibold text-slate-600 font-number">54.3 坪</span>
+              <!-- 標籤組 -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>南投市</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>住宅</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>屋齡31年</span>
               </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20700811.html" target="_blank" rel="noopener noreferrer" title="專簽可看！近彰化火車站五房21年美透天">
-                  專簽可看！近彰化火車站五房21年美透天
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                鄰近彰化火車站生活圈，五大房寬敞使用空間，屋況維護極佳，採光通風好，三代同堂置產自住首選。
+              <!-- 物件標題 (點擊直接開 591) -->
+              <a href="https://sale.591.com.tw/home/house/detail/2/20773456.html" target="_blank" rel="noopener noreferrer" class="block">
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                  【ＬＥＯ】專簽可看！文化路上三樓臨路超值透天
+                </h3>
+              </a>
+              <p class="text-xs text-slate-500 mt-1 truncate flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3 h-3 text-brand-600 flex-shrink-0"></i>
+                <span>南投縣南投市 文化路・南投縣南投市</span>
               </p>
             </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                5房2廳4衛 ｜ 門前/車庫停車
+
+            <!-- 物件規格參數 (格狀) -->
+            <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">格局</p>
+                <p class="font-bold text-slate-700 mt-0.5">5房2廳3衛</p>
               </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20700811.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">建坪</p>
+                <p class="font-bold text-slate-700 mt-0.5">47.7 坪</p>
               </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 3 ： 七期惠宇天青・最美高樓視野戶 附雙平車 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item" data-category="xitun" data-index="3">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20561178.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【七期惠宇天青・最美高樓視野戶 附雙平車】詳細屋況">
-            <img src="https://img1.591.com.tw/house/2026/07/16/178418067872712201.jpg!800x600.jpg" alt="七期惠宇天青・最美高樓視野戶 附雙平車" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              西屯區・七期頂級豪邸
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 5,380 萬
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">樓層/屋齡</p>
+                <p class="font-bold text-slate-700 mt-0.5 truncate">整棟/3 樓</p>
+              </div>
             </div>
 
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <!-- 價格與行動按鈕 -->
+            <div class="pt-2 flex items-center justify-between">
+              <div>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-2xl font-black text-rose-600">988</span>
+                  <span class="text-xs font-bold text-rose-600">萬</span>
+                </div>
+                <span class='text-[11px] text-slate-400 font-medium'>單價約 20.7 萬/坪</span>
+              </div>
+              <a href="https://sale.591.com.tw/home/house/detail/2/20773456.html" target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-brand-700 hover:bg-brand-800 transition-colors flex items-center gap-1 shadow-sm">
+                <span>看詳情</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 物件卡片 #3 (【ＬＥＯ】專簽可看！南七期15年屋高樓大四房平車｜大墩學區) -->
+        <div class="prop-item  bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nantun" data-id="3">
+          <!-- 卡片圖片區 (直接可點擊跳轉 591) -->
+          <a href="https://sale.591.com.tw/home/house/detail/2/20772588.html" target="_blank" rel="noopener noreferrer" class="relative block aspect-[16/10] overflow-hidden bg-slate-100 group/img">
+            <img src="https://img1.591.com.tw/house/2026/08/21/178729946698371507.jpg!800x600.jpg" 
+                 alt="【ＬＥＯ】專簽可看！南七期15年屋高樓大四房平車｜大墩學區" 
+                 loading="lazy"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end p-3">
+              <span class="text-xs font-bold text-white flex items-center gap-1 bg-accent-591/90 px-2.5 py-1 rounded-lg backdrop-blur-sm shadow-md">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>前往 591 查看實拍詳情</span>
+              </span>
+            </div>
+            <!-- 分類標籤 -->
+            <div class="absolute top-3 left-3 flex items-center gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold shadow-md bg-emerald-600 text-white">
+                南屯優質
+              </span>
+            </div>
+            <!-- 591 專屬標籤 -->
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-0.5 rounded bg-accent-591 text-white text-[10px] font-bold shadow-sm flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3 h-3"></i> 591實拍
               </span>
             </div>
           </a>
@@ -530,63 +567,82 @@
           <!-- 卡片內容區 -->
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
             <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市西屯區市政北一路">台中市西屯區市政北一路</span>
-                <span class="font-semibold text-slate-600 font-number">126.5 坪</span>
+              <!-- 標籤組 -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>南屯區</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>主人園邸</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>住宅</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>屋齡14年</span>
               </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20561178.html" target="_blank" rel="noopener noreferrer" title="七期惠宇天青・最美高樓視野戶 附雙平車">
-                  七期惠宇天青・最美高樓視野戶 附雙平車
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                七期市政核心頂級代表作，超高樓層無遮蔽遼闊視野，SRC鋼骨結構與飯店式管理，附連號雙平面大車位。
+              <!-- 物件標題 (點擊直接開 591) -->
+              <a href="https://sale.591.com.tw/home/house/detail/2/20772588.html" target="_blank" rel="noopener noreferrer" class="block">
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                  【ＬＥＯ】專簽可看！南七期15年屋高樓大四房平車｜大墩學區
+                </h3>
+              </a>
+              <p class="text-xs text-slate-500 mt-1 truncate flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3 h-3 text-brand-600 flex-shrink-0"></i>
+                <span>台中市南屯區 大墩十一街・主人園邸</span>
               </p>
             </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                大器豪宅格局 ｜ 雙平面車位
+
+            <!-- 物件規格參數 (格狀) -->
+            <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">格局</p>
+                <p class="font-bold text-slate-700 mt-0.5">4房2廳2衛</p>
               </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20561178.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">建坪</p>
+                <p class="font-bold text-slate-700 mt-0.5">83.2 坪</p>
               </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 4 ： 降價！專簽可看！近七期全新雙車電梯別墅 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="xitun" data-index="4">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20495556.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【降價！專簽可看！近七期全新雙車電梯別墅】詳細屋況">
-            <img src="https://img1.591.com.tw/house/2026/07/04/178316347749997600.jpg!800x600.jpg" alt="降價！專簽可看！近七期全新雙車電梯別墅" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              西屯區・達莉墅
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 3,488 萬
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">樓層/屋齡</p>
+                <p class="font-bold text-slate-700 mt-0.5 truncate">9/15 樓</p>
+              </div>
             </div>
 
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <!-- 價格與行動按鈕 -->
+            <div class="pt-2 flex items-center justify-between">
+              <div>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-2xl font-black text-rose-600">3,288</span>
+                  <span class="text-xs font-bold text-rose-600">萬</span>
+                </div>
+                <span class='text-[11px] text-slate-400 font-medium'>單價約 39.5 萬/坪</span>
+              </div>
+              <a href="https://sale.591.com.tw/home/house/detail/2/20772588.html" target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-brand-700 hover:bg-brand-800 transition-colors flex items-center gap-1 shadow-sm">
+                <span>看詳情</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 物件卡片 #4 (【ＬＥＯ】專簽承辦！可看！近彰化火車輕屋齡五房透天) -->
+        <div class="prop-item  bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nationwide" data-id="4">
+          <!-- 卡片圖片區 (直接可點擊跳轉 591) -->
+          <a href="https://sale.591.com.tw/home/house/detail/2/20747921.html" target="_blank" rel="noopener noreferrer" class="relative block aspect-[16/10] overflow-hidden bg-slate-100 group/img">
+            <img src="https://img1.591.com.tw/house/2026/08/17/178694501025632001.jpg!800x600.jpg" 
+                 alt="【ＬＥＯ】專簽承辦！可看！近彰化火車輕屋齡五房透天" 
+                 loading="lazy"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end p-3">
+              <span class="text-xs font-bold text-white flex items-center gap-1 bg-accent-591/90 px-2.5 py-1 rounded-lg backdrop-blur-sm shadow-md">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>前往 591 查看實拍詳情</span>
+              </span>
+            </div>
+            <!-- 分類標籤 -->
+            <div class="absolute top-3 left-3 flex items-center gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold shadow-md bg-brand-700 text-white">
+                彰化縣彰化市
+              </span>
+            </div>
+            <!-- 591 專屬標籤 -->
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-0.5 rounded bg-accent-591 text-white text-[10px] font-bold shadow-sm flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3 h-3"></i> 591實拍
               </span>
             </div>
           </a>
@@ -594,63 +650,81 @@
           <!-- 卡片內容區 -->
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
             <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市西屯區安和東路">台中市西屯區安和東路</span>
-                <span class="font-semibold text-slate-600 font-number">65.7 坪</span>
+              <!-- 標籤組 -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>彰化市</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>住宅</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>屋齡21年</span>
               </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20495556.html" target="_blank" rel="noopener noreferrer" title="降價！專簽可看！近七期全新雙車電梯別墅">
-                  降價！專簽可看！近七期全新雙車電梯別墅
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                緊鄰台中七期市政核心，周邊名校商圈環繞，稀有釋出大器格局，頂級住戶素質與嚴謹物業管理。
+              <!-- 物件標題 (點擊直接開 591) -->
+              <a href="https://sale.591.com.tw/home/house/detail/2/20747921.html" target="_blank" rel="noopener noreferrer" class="block">
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                  【ＬＥＯ】專簽承辦！可看！近彰化火車輕屋齡五房透天
+                </h3>
+              </a>
+              <p class="text-xs text-slate-500 mt-1 truncate flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3 h-3 text-brand-600 flex-shrink-0"></i>
+                <span>彰化縣彰化市 辭修路・彰化縣彰化市</span>
               </p>
             </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                4房2廳4衛 ｜ 雙平面車位
+
+            <!-- 物件規格參數 (格狀) -->
+            <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">格局</p>
+                <p class="font-bold text-slate-700 mt-0.5">5房2廳4衛</p>
               </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20495556.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">建坪</p>
+                <p class="font-bold text-slate-700 mt-0.5">56.3 坪</p>
               </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 5 ： 可看超值！水湳兩房含車｜捷運宅｜四面採光衛浴開窗 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="xitun" data-index="5">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20495482.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【可看超值！水湳兩房含車｜捷運宅｜四面採光衛浴開窗】詳細屋況">
-            <img src="https://img2.591.com.tw/house/2026/07/04/178316092257196207.jpg!800x600.jpg" alt="可看超值！水湳兩房含車｜捷運宅｜四面採光衛浴開窗" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              西屯區・喜洋洋
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 898 萬
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">樓層/屋齡</p>
+                <p class="font-bold text-slate-700 mt-0.5 truncate">整棟/4 樓</p>
+              </div>
             </div>
 
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <!-- 價格與行動按鈕 -->
+            <div class="pt-2 flex items-center justify-between">
+              <div>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-2xl font-black text-rose-600">1,680</span>
+                  <span class="text-xs font-bold text-rose-600">萬</span>
+                </div>
+                <span class='text-[11px] text-slate-400 font-medium'>單價約 29.8 萬/坪</span>
+              </div>
+              <a href="https://sale.591.com.tw/home/house/detail/2/20747921.html" target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-brand-700 hover:bg-brand-800 transition-colors flex items-center gap-1 shadow-sm">
+                <span>看詳情</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 物件卡片 #5 (【ＬＥＯ】專簽可看！近彰化火車站五房21年美透天) -->
+        <div class="prop-item  bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nationwide" data-id="5">
+          <!-- 卡片圖片區 (直接可點擊跳轉 591) -->
+          <a href="https://sale.591.com.tw/home/house/detail/2/20700811.html" target="_blank" rel="noopener noreferrer" class="relative block aspect-[16/10] overflow-hidden bg-slate-100 group/img">
+            <img src="https://img1.591.com.tw/house/2026/08/24/178756466222901803.jpg!800x600.jpg" 
+                 alt="【ＬＥＯ】專簽可看！近彰化火車站五房21年美透天" 
+                 loading="lazy"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end p-3">
+              <span class="text-xs font-bold text-white flex items-center gap-1 bg-accent-591/90 px-2.5 py-1 rounded-lg backdrop-blur-sm shadow-md">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>前往 591 查看實拍詳情</span>
+              </span>
+            </div>
+            <!-- 分類標籤 -->
+            <div class="absolute top-3 left-3 flex items-center gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold shadow-md bg-brand-700 text-white">
+                彰化縣彰化市
+              </span>
+            </div>
+            <!-- 591 專屬標籤 -->
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-0.5 rounded bg-accent-591 text-white text-[10px] font-bold shadow-sm flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3 h-3"></i> 591實拍
               </span>
             </div>
           </a>
@@ -658,63 +732,81 @@
           <!-- 卡片內容區 -->
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
             <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市西屯區長安路二段">台中市西屯區長安路二段</span>
-                <span class="font-semibold text-slate-600 font-number">26.5 坪</span>
+              <!-- 標籤組 -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>彰化市</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>住宅</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>屋齡21年</span>
               </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20495482.html" target="_blank" rel="noopener noreferrer" title="可看超值！水湳兩房含車｜捷運宅｜四面採光衛浴開窗">
-                  可看超值！水湳兩房含車｜捷運宅｜四面採光衛浴開窗
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                座落水湳經貿生活圈，近未來重大建設與捷運站點，採光通風極佳，首購置產增值焦點。
+              <!-- 物件標題 (點擊直接開 591) -->
+              <a href="https://sale.591.com.tw/home/house/detail/2/20700811.html" target="_blank" rel="noopener noreferrer" class="block">
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                  【ＬＥＯ】專簽可看！近彰化火車站五房21年美透天
+                </h3>
+              </a>
+              <p class="text-xs text-slate-500 mt-1 truncate flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3 h-3 text-brand-600 flex-shrink-0"></i>
+                <span>彰化縣彰化市 辭修路・彰化縣彰化市</span>
               </p>
             </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                2房2廳1衛 ｜ 附車位
+
+            <!-- 物件規格參數 (格狀) -->
+            <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">格局</p>
+                <p class="font-bold text-slate-700 mt-0.5">5房2廳4衛</p>
               </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20495482.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">建坪</p>
+                <p class="font-bold text-slate-700 mt-0.5">54.3 坪</p>
               </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 6 ： 專簽！近高鐵新三房平車｜高樓層全棟最便宜 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="nationwide" data-index="6">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20792896.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【專簽！近高鐵新三房平車｜高樓層全棟最便宜】詳細屋況">
-            <img src="https://img2.591.com.tw/house/2026/08/25/178765121747229006.jpg!800x600.jpg" alt="專簽！近高鐵新三房平車｜高樓層全棟最便宜" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              烏日區・浩瀚豐世紀
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 1,500 萬
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">樓層/屋齡</p>
+                <p class="font-bold text-slate-700 mt-0.5 truncate">整棟/4 樓</p>
+              </div>
             </div>
 
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <!-- 價格與行動按鈕 -->
+            <div class="pt-2 flex items-center justify-between">
+              <div>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-2xl font-black text-rose-600">1,680</span>
+                  <span class="text-xs font-bold text-rose-600">萬</span>
+                </div>
+                <span class='text-[11px] text-slate-400 font-medium'>單價約 30.9 萬/坪</span>
+              </div>
+              <a href="https://sale.591.com.tw/home/house/detail/2/20700811.html" target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-brand-700 hover:bg-brand-800 transition-colors flex items-center gap-1 shadow-sm">
+                <span>看詳情</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 物件卡片 #6 (【ＬＥＯ】降價！可看！近七期新電梯別墅車庫停車｜屋主誠售) -->
+        <div class="prop-item  bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="xitun" data-id="6">
+          <!-- 卡片圖片區 (直接可點擊跳轉 591) -->
+          <a href="https://sale.591.com.tw/home/house/detail/2/20700771.html" target="_blank" rel="noopener noreferrer" class="relative block aspect-[16/10] overflow-hidden bg-slate-100 group/img">
+            <img src="https://img1.591.com.tw/house/2026/08/24/178756508812501705.jpg!800x600.jpg" 
+                 alt="【ＬＥＯ】降價！可看！近七期新電梯別墅車庫停車｜屋主誠售" 
+                 loading="lazy"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end p-3">
+              <span class="text-xs font-bold text-white flex items-center gap-1 bg-accent-591/90 px-2.5 py-1 rounded-lg backdrop-blur-sm shadow-md">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>前往 591 查看實拍詳情</span>
+              </span>
+            </div>
+            <!-- 分類標籤 -->
+            <div class="absolute top-3 left-3 flex items-center gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold shadow-md bg-amber-600 text-white">
+                西屯七期
+              </span>
+            </div>
+            <!-- 591 專屬標籤 -->
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-0.5 rounded bg-accent-591 text-white text-[10px] font-bold shadow-sm flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3 h-3"></i> 591實拍
               </span>
             </div>
           </a>
@@ -722,63 +814,82 @@
           <!-- 卡片內容區 -->
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
             <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市烏日區中山路三段">台中市烏日區中山路三段</span>
-                <span class="font-semibold text-slate-600 font-number">45.8 坪</span>
+              <!-- 標籤組 -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>西屯區</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>達莉墅</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>住宅</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>屋齡3年</span>
               </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20792896.html" target="_blank" rel="noopener noreferrer" title="專簽！近高鐵新三房平車｜高樓層全棟最便宜">
-                  專簽！近高鐵新三房平車｜高樓層全棟最便宜
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                座落台中市烏日區中山路三段，地段優越生活機能完備，格局方正採光通風極佳，附平面車位，置產自住首選。
+              <!-- 物件標題 (點擊直接開 591) -->
+              <a href="https://sale.591.com.tw/home/house/detail/2/20700771.html" target="_blank" rel="noopener noreferrer" class="block">
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                  【ＬＥＯ】降價！可看！近七期新電梯別墅車庫停車｜屋主誠售
+                </h3>
+              </a>
+              <p class="text-xs text-slate-500 mt-1 truncate flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3 h-3 text-brand-600 flex-shrink-0"></i>
+                <span>台中市西屯區 安和東路・達莉墅</span>
               </p>
             </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                3房2廳2衛 ｜ 平面車位
+
+            <!-- 物件規格參數 (格狀) -->
+            <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">格局</p>
+                <p class="font-bold text-slate-700 mt-0.5">4房2廳4衛</p>
               </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20792896.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">建坪</p>
+                <p class="font-bold text-slate-700 mt-0.5">65.7 坪</p>
               </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 7 ： 專簽可看！文化路上三樓臨路超值透天 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="nationwide" data-index="7">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20773456.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【專簽可看！文化路上三樓臨路超值透天】詳細屋況">
-            <img src="https://img1.591.com.tw/house/2026/08/21/178730454688131605.jpg!800x600.jpg" alt="專簽可看！文化路上三樓臨路超值透天" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              南投市・專任好房
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 988 萬
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">樓層/屋齡</p>
+                <p class="font-bold text-slate-700 mt-0.5 truncate">整棟/7 樓</p>
+              </div>
             </div>
 
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <!-- 價格與行動按鈕 -->
+            <div class="pt-2 flex items-center justify-between">
+              <div>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-2xl font-black text-rose-600">3,488</span>
+                  <span class="text-xs font-bold text-rose-600">萬</span>
+                </div>
+                <span class='text-[11px] text-slate-400 font-medium'>單價約 53.1 萬/坪</span>
+              </div>
+              <a href="https://sale.591.com.tw/home/house/detail/2/20700771.html" target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-brand-700 hover:bg-brand-800 transition-colors flex items-center gap-1 shadow-sm">
+                <span>看詳情</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 物件卡片 #7 (【ＬＥＯ】專簽可看！再降價|近七期新電梯雙車別墅) -->
+        <div class="prop-item hidden extra-property-card bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="xitun" data-id="7">
+          <!-- 卡片圖片區 (直接可點擊跳轉 591) -->
+          <a href="https://sale.591.com.tw/home/house/detail/2/20700562.html" target="_blank" rel="noopener noreferrer" class="relative block aspect-[16/10] overflow-hidden bg-slate-100 group/img">
+            <img src="https://img2.591.com.tw/house/2026/08/24/178756598120734108.jpg!800x600.jpg" 
+                 alt="【ＬＥＯ】專簽可看！再降價|近七期新電梯雙車別墅" 
+                 loading="lazy"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end p-3">
+              <span class="text-xs font-bold text-white flex items-center gap-1 bg-accent-591/90 px-2.5 py-1 rounded-lg backdrop-blur-sm shadow-md">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>前往 591 查看實拍詳情</span>
+              </span>
+            </div>
+            <!-- 分類標籤 -->
+            <div class="absolute top-3 left-3 flex items-center gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold shadow-md bg-amber-600 text-white">
+                西屯七期
+              </span>
+            </div>
+            <!-- 591 專屬標籤 -->
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-0.5 rounded bg-accent-591 text-white text-[10px] font-bold shadow-sm flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3 h-3"></i> 591實拍
               </span>
             </div>
           </a>
@@ -786,63 +897,82 @@
           <!-- 卡片內容區 -->
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
             <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="南投縣南投市文化路">南投縣南投市文化路</span>
-                <span class="font-semibold text-slate-600 font-number">47.7 坪</span>
+              <!-- 標籤組 -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>西屯區</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>達莉墅</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>住宅</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>屋齡3年</span>
               </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20773456.html" target="_blank" rel="noopener noreferrer" title="專簽可看！文化路上三樓臨路超值透天">
-                  專簽可看！文化路上三樓臨路超值透天
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                稀有大面寬透天別墅，室內大使用空間，門前/車庫好停車，三代同堂傳家好宅。
+              <!-- 物件標題 (點擊直接開 591) -->
+              <a href="https://sale.591.com.tw/home/house/detail/2/20700562.html" target="_blank" rel="noopener noreferrer" class="block">
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                  【ＬＥＯ】專簽可看！再降價|近七期新電梯雙車別墅
+                </h3>
+              </a>
+              <p class="text-xs text-slate-500 mt-1 truncate flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3 h-3 text-brand-600 flex-shrink-0"></i>
+                <span>台中市西屯區 安和東路・達莉墅</span>
               </p>
             </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                5房2廳3衛 ｜ 附車位
+
+            <!-- 物件規格參數 (格狀) -->
+            <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">格局</p>
+                <p class="font-bold text-slate-700 mt-0.5">4房2廳4衛</p>
               </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20773456.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">建坪</p>
+                <p class="font-bold text-slate-700 mt-0.5">65.7 坪</p>
               </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 8 ： 專簽可看！南七期15年屋高樓大四房平車｜大墩學區 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="nantun" data-index="8">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20772588.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【專簽可看！南七期15年屋高樓大四房平車｜大墩學區】詳細屋況">
-            <img src="https://img2.591.com.tw/house/2026/08/21/178729946698371507.jpg!800x600.jpg" alt="專簽可看！南七期15年屋高樓大四房平車｜大墩學區" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              南屯區・主人園邸
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 3,288 萬
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">樓層/屋齡</p>
+                <p class="font-bold text-slate-700 mt-0.5 truncate">整棟/7 樓</p>
+              </div>
             </div>
 
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <!-- 價格與行動按鈕 -->
+            <div class="pt-2 flex items-center justify-between">
+              <div>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-2xl font-black text-rose-600">3,488</span>
+                  <span class="text-xs font-bold text-rose-600">萬</span>
+                </div>
+                <span class='text-[11px] text-slate-400 font-medium'>單價約 53.1 萬/坪</span>
+              </div>
+              <a href="https://sale.591.com.tw/home/house/detail/2/20700562.html" target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-brand-700 hover:bg-brand-800 transition-colors flex items-center gap-1 shadow-sm">
+                <span>看詳情</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 物件卡片 #8 (【ＬＥＯ】專簽可看！彰化火車站五房21年美透天學區宅) -->
+        <div class="prop-item hidden extra-property-card bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nationwide" data-id="8">
+          <!-- 卡片圖片區 (直接可點擊跳轉 591) -->
+          <a href="https://sale.591.com.tw/home/house/detail/2/20700530.html" target="_blank" rel="noopener noreferrer" class="relative block aspect-[16/10] overflow-hidden bg-slate-100 group/img">
+            <img src="https://img2.591.com.tw/house/2026/08/24/178756731085951102.jpg!800x600.jpg" 
+                 alt="【ＬＥＯ】專簽可看！彰化火車站五房21年美透天學區宅" 
+                 loading="lazy"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end p-3">
+              <span class="text-xs font-bold text-white flex items-center gap-1 bg-accent-591/90 px-2.5 py-1 rounded-lg backdrop-blur-sm shadow-md">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>前往 591 查看實拍詳情</span>
+              </span>
+            </div>
+            <!-- 分類標籤 -->
+            <div class="absolute top-3 left-3 flex items-center gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold shadow-md bg-brand-700 text-white">
+                彰化縣彰化市
+              </span>
+            </div>
+            <!-- 591 專屬標籤 -->
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-0.5 rounded bg-accent-591 text-white text-[10px] font-bold shadow-sm flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3 h-3"></i> 591實拍
               </span>
             </div>
           </a>
@@ -850,63 +980,81 @@
           <!-- 卡片內容區 -->
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
             <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市南屯區大墩十一街">台中市南屯區大墩十一街</span>
-                <span class="font-semibold text-slate-600 font-number">83.2 坪</span>
+              <!-- 標籤組 -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>彰化市</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>住宅</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>屋齡21年</span>
               </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20772588.html" target="_blank" rel="noopener noreferrer" title="專簽可看！南七期15年屋高樓大四房平車｜大墩學區">
-                  專簽可看！南七期15年屋高樓大四房平車｜大墩學區
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                緊鄰台中七期市政核心，周邊名校商圈環繞，稀有釋出大器格局，頂級住戶素質與嚴謹物業管理。
+              <!-- 物件標題 (點擊直接開 591) -->
+              <a href="https://sale.591.com.tw/home/house/detail/2/20700530.html" target="_blank" rel="noopener noreferrer" class="block">
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                  【ＬＥＯ】專簽可看！彰化火車站五房21年美透天學區宅
+                </h3>
+              </a>
+              <p class="text-xs text-slate-500 mt-1 truncate flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3 h-3 text-brand-600 flex-shrink-0"></i>
+                <span>彰化縣彰化市 辭修路・彰化縣彰化市</span>
               </p>
             </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                4房2廳2衛 ｜ 平面車位
+
+            <!-- 物件規格參數 (格狀) -->
+            <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">格局</p>
+                <p class="font-bold text-slate-700 mt-0.5">5房2廳4衛</p>
               </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20772588.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">建坪</p>
+                <p class="font-bold text-slate-700 mt-0.5">56.3 坪</p>
               </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 9 ： 專簽承辦！可看！近彰化火車輕屋齡五房透天 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="nationwide" data-index="9">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20747921.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【專簽承辦！可看！近彰化火車輕屋齡五房透天】詳細屋況">
-            <img src="https://img2.591.com.tw/house/2026/08/17/178694501025632001.jpg!800x600.jpg" alt="專簽承辦！可看！近彰化火車輕屋齡五房透天" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              彰化市・專任好房
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 1,680 萬
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">樓層/屋齡</p>
+                <p class="font-bold text-slate-700 mt-0.5 truncate">整棟/4 樓</p>
+              </div>
             </div>
 
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <!-- 價格與行動按鈕 -->
+            <div class="pt-2 flex items-center justify-between">
+              <div>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-2xl font-black text-rose-600">1,680</span>
+                  <span class="text-xs font-bold text-rose-600">萬</span>
+                </div>
+                <span class='text-[11px] text-slate-400 font-medium'>單價約 29.8 萬/坪</span>
+              </div>
+              <a href="https://sale.591.com.tw/home/house/detail/2/20700530.html" target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-brand-700 hover:bg-brand-800 transition-colors flex items-center gap-1 shadow-sm">
+                <span>看詳情</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 物件卡片 #9 (【ＬＥＯ】可看！登陽質感全新最超值高樓三房B2連號雙平車) -->
+        <div class="prop-item hidden extra-property-card bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nationwide" data-id="9">
+          <!-- 卡片圖片區 (直接可點擊跳轉 591) -->
+          <a href="https://sale.591.com.tw/home/house/detail/2/20687143.html" target="_blank" rel="noopener noreferrer" class="relative block aspect-[16/10] overflow-hidden bg-slate-100 group/img">
+            <img src="https://img2.591.com.tw/house/2026/08/09/178624555704744606.jpg!800x600.jpg" 
+                 alt="【ＬＥＯ】可看！登陽質感全新最超值高樓三房B2連號雙平車" 
+                 loading="lazy"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end p-3">
+              <span class="text-xs font-bold text-white flex items-center gap-1 bg-accent-591/90 px-2.5 py-1 rounded-lg backdrop-blur-sm shadow-md">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>前往 591 查看實拍詳情</span>
+              </span>
+            </div>
+            <!-- 分類標籤 -->
+            <div class="absolute top-3 left-3 flex items-center gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold shadow-md bg-brand-700 text-white">
+                台中市南區
+              </span>
+            </div>
+            <!-- 591 專屬標籤 -->
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-0.5 rounded bg-accent-591 text-white text-[10px] font-bold shadow-sm flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3 h-3"></i> 591實拍
               </span>
             </div>
           </a>
@@ -914,63 +1062,81 @@
           <!-- 卡片內容區 -->
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
             <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="彰化縣彰化市辭修路">彰化縣彰化市辭修路</span>
-                <span class="font-semibold text-slate-600 font-number">56.3 坪</span>
+              <!-- 標籤組 -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>南區</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>登陽大地悅章</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>住宅</span>
               </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20747921.html" target="_blank" rel="noopener noreferrer" title="專簽承辦！可看！近彰化火車輕屋齡五房透天">
-                  專簽承辦！可看！近彰化火車輕屋齡五房透天
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                稀有大面寬透天別墅，室內大使用空間，門前/車庫好停車，三代同堂傳家好宅。
+              <!-- 物件標題 (點擊直接開 591) -->
+              <a href="https://sale.591.com.tw/home/house/detail/2/20687143.html" target="_blank" rel="noopener noreferrer" class="block">
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                  【ＬＥＯ】可看！登陽質感全新最超值高樓三房B2連號雙平車
+                </h3>
+              </a>
+              <p class="text-xs text-slate-500 mt-1 truncate flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3 h-3 text-brand-600 flex-shrink-0"></i>
+                <span>台中市南區 福田二街・登陽大地悅章</span>
               </p>
             </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                5房2廳4衛 ｜ 附車位
+
+            <!-- 物件規格參數 (格狀) -->
+            <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">格局</p>
+                <p class="font-bold text-slate-700 mt-0.5">3房2廳2衛</p>
               </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20747921.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">建坪</p>
+                <p class="font-bold text-slate-700 mt-0.5">54.3 坪</p>
               </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 10 ： 大降180萬！可看！森林公園博克萊兩房平車超值戶 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="nantun" data-index="10">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20478106.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【大降180萬！可看！森林公園博克萊兩房平車超值戶】詳細屋況">
-            <img src="https://img1.591.com.tw/house/2026/07/01/178290172608267703.jpg!800x600.jpg" alt="大降180萬！可看！森林公園博克萊兩房平車超值戶" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              南屯區・七期博克萊
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 1,388 萬
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">樓層/屋齡</p>
+                <p class="font-bold text-slate-700 mt-0.5 truncate">9/15 樓</p>
+              </div>
             </div>
 
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <!-- 價格與行動按鈕 -->
+            <div class="pt-2 flex items-center justify-between">
+              <div>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-2xl font-black text-rose-600">2,080</span>
+                  <span class="text-xs font-bold text-rose-600">萬</span>
+                </div>
+                <span class='text-[11px] text-slate-400 font-medium'>單價約 38.3 萬/坪</span>
+              </div>
+              <a href="https://sale.591.com.tw/home/house/detail/2/20687143.html" target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-brand-700 hover:bg-brand-800 transition-colors flex items-center gap-1 shadow-sm">
+                <span>看詳情</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 物件卡片 #10 (【ＬＥＯ】可看！北區名宅順天謙華｜高樓三房B1平車) -->
+        <div class="prop-item hidden extra-property-card bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nationwide" data-id="10">
+          <!-- 卡片圖片區 (直接可點擊跳轉 591) -->
+          <a href="https://sale.591.com.tw/home/house/detail/2/20564176.html" target="_blank" rel="noopener noreferrer" class="relative block aspect-[16/10] overflow-hidden bg-slate-100 group/img">
+            <img src="https://img1.591.com.tw/house/2026/07/16/178420206023668000.jpg!800x600.jpg" 
+                 alt="【ＬＥＯ】可看！北區名宅順天謙華｜高樓三房B1平車" 
+                 loading="lazy"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end p-3">
+              <span class="text-xs font-bold text-white flex items-center gap-1 bg-accent-591/90 px-2.5 py-1 rounded-lg backdrop-blur-sm shadow-md">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>前往 591 查看實拍詳情</span>
+              </span>
+            </div>
+            <!-- 分類標籤 -->
+            <div class="absolute top-3 left-3 flex items-center gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold shadow-md bg-brand-700 text-white">
+                台中市北區
+              </span>
+            </div>
+            <!-- 591 專屬標籤 -->
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-0.5 rounded bg-accent-591 text-white text-[10px] font-bold shadow-sm flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3 h-3"></i> 591實拍
               </span>
             </div>
           </a>
@@ -978,63 +1144,82 @@
           <!-- 卡片內容區 -->
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
             <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市南屯區大墩七街">台中市南屯區大墩七街</span>
-                <span class="font-semibold text-slate-600 font-number">31 坪</span>
+              <!-- 標籤組 -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>北區</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>順天謙華</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>住宅</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>屋齡3年</span>
               </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20478106.html" target="_blank" rel="noopener noreferrer" title="大降180萬！可看！森林公園博克萊兩房平車超值戶">
-                  大降180萬！可看！森林公園博克萊兩房平車超值戶
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                鄰近文心森林公園萬坪綠地與捷運生活圈，下樓享綠意美景，生活機能絕佳，小家庭與換屋優選。
+              <!-- 物件標題 (點擊直接開 591) -->
+              <a href="https://sale.591.com.tw/home/house/detail/2/20564176.html" target="_blank" rel="noopener noreferrer" class="block">
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                  【ＬＥＯ】可看！北區名宅順天謙華｜高樓三房B1平車
+                </h3>
+              </a>
+              <p class="text-xs text-slate-500 mt-1 truncate flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3 h-3 text-brand-600 flex-shrink-0"></i>
+                <span>台中市北區 北屯路・順天謙華</span>
               </p>
             </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                2房2廳1衛 ｜ 平面車位
+
+            <!-- 物件規格參數 (格狀) -->
+            <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">格局</p>
+                <p class="font-bold text-slate-700 mt-0.5">3房2廳2衛</p>
               </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20478106.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">建坪</p>
+                <p class="font-bold text-slate-700 mt-0.5">49 坪</p>
               </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 11 ： 降價！可看！近七期新電梯別墅車庫停車｜屋主誠售 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="xitun" data-index="11">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20700771.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【降價！可看！近七期新電梯別墅車庫停車｜屋主誠售】詳細屋況">
-            <img src="https://img1.591.com.tw/house/2026/08/24/178756508812501705.jpg!800x600.jpg" alt="降價！可看！近七期新電梯別墅車庫停車｜屋主誠售" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              西屯區・達莉墅
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 3,488 萬
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">樓層/屋齡</p>
+                <p class="font-bold text-slate-700 mt-0.5 truncate">12/18 樓</p>
+              </div>
             </div>
 
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <!-- 價格與行動按鈕 -->
+            <div class="pt-2 flex items-center justify-between">
+              <div>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-2xl font-black text-rose-600">2,438</span>
+                  <span class="text-xs font-bold text-rose-600">萬</span>
+                </div>
+                <span class='text-[11px] text-slate-400 font-medium'>單價約 49.8 萬/坪</span>
+              </div>
+              <a href="https://sale.591.com.tw/home/house/detail/2/20564176.html" target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-brand-700 hover:bg-brand-800 transition-colors flex items-center gap-1 shadow-sm">
+                <span>看詳情</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 物件卡片 #11 (【ＬＥＯ】可看！南屯首購兩房平車｜微時代高樓低總價) -->
+        <div class="prop-item hidden extra-property-card bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="nantun" data-id="11">
+          <!-- 卡片圖片區 (直接可點擊跳轉 591) -->
+          <a href="https://sale.591.com.tw/home/house/detail/2/20563546.html" target="_blank" rel="noopener noreferrer" class="relative block aspect-[16/10] overflow-hidden bg-slate-100 group/img">
+            <img src="https://img2.591.com.tw/house/2026/07/16/178419489671005203.jpg!800x600.jpg" 
+                 alt="【ＬＥＯ】可看！南屯首購兩房平車｜微時代高樓低總價" 
+                 loading="lazy"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end p-3">
+              <span class="text-xs font-bold text-white flex items-center gap-1 bg-accent-591/90 px-2.5 py-1 rounded-lg backdrop-blur-sm shadow-md">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>前往 591 查看實拍詳情</span>
+              </span>
+            </div>
+            <!-- 分類標籤 -->
+            <div class="absolute top-3 left-3 flex items-center gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold shadow-md bg-emerald-600 text-white">
+                南屯優質
+              </span>
+            </div>
+            <!-- 591 專屬標籤 -->
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-0.5 rounded bg-accent-591 text-white text-[10px] font-bold shadow-sm flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3 h-3"></i> 591實拍
               </span>
             </div>
           </a>
@@ -1042,63 +1227,82 @@
           <!-- 卡片內容區 -->
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
             <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市西屯區安和東路">台中市西屯區安和東路</span>
-                <span class="font-semibold text-slate-600 font-number">65.7 坪</span>
+              <!-- 標籤組 -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>南屯區</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>泓瑞微時代</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>住宅</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>屋齡3年</span>
               </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20700771.html" target="_blank" rel="noopener noreferrer" title="降價！可看！近七期新電梯別墅車庫停車｜屋主誠售">
-                  降價！可看！近七期新電梯別墅車庫停車｜屋主誠售
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                緊鄰台中七期市政核心，周邊名校商圈環繞，稀有釋出大器格局，頂級住戶素質與嚴謹物業管理。
+              <!-- 物件標題 (點擊直接開 591) -->
+              <a href="https://sale.591.com.tw/home/house/detail/2/20563546.html" target="_blank" rel="noopener noreferrer" class="block">
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                  【ＬＥＯ】可看！南屯首購兩房平車｜微時代高樓低總價
+                </h3>
+              </a>
+              <p class="text-xs text-slate-500 mt-1 truncate flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3 h-3 text-brand-600 flex-shrink-0"></i>
+                <span>台中市南屯區 三和街・泓瑞微時代</span>
               </p>
             </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                4房2廳4衛 ｜ 車庫停車
+
+            <!-- 物件規格參數 (格狀) -->
+            <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">格局</p>
+                <p class="font-bold text-slate-700 mt-0.5">2房1廳1衛</p>
               </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20700771.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">建坪</p>
+                <p class="font-bold text-slate-700 mt-0.5">27.2 坪</p>
               </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 12 ： 專簽可看！彰化火車站五房21年美透天學區宅 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="nationwide" data-index="12">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20700530.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【專簽可看！彰化火車站五房21年美透天學區宅】詳細屋況">
-            <img src="https://img2.591.com.tw/house/2026/08/24/178756731085951102.jpg!800x600.jpg" alt="專簽可看！彰化火車站五房21年美透天學區宅" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              彰化市・專任好房
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 1,680 萬
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">樓層/屋齡</p>
+                <p class="font-bold text-slate-700 mt-0.5 truncate">11/15 樓</p>
+              </div>
             </div>
 
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <!-- 價格與行動按鈕 -->
+            <div class="pt-2 flex items-center justify-between">
+              <div>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-2xl font-black text-rose-600">1,398</span>
+                  <span class="text-xs font-bold text-rose-600">萬</span>
+                </div>
+                <span class='text-[11px] text-slate-400 font-medium'>單價約 51.4 萬/坪</span>
+              </div>
+              <a href="https://sale.591.com.tw/home/house/detail/2/20563546.html" target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-brand-700 hover:bg-brand-800 transition-colors flex items-center gap-1 shadow-sm">
+                <span>看詳情</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 物件卡片 #12 (【ＬＥＯ】可看！超值｜七期惠宇天青｜最美視野戶附雙平車) -->
+        <div class="prop-item hidden extra-property-card bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="xitun" data-id="12">
+          <!-- 卡片圖片區 (直接可點擊跳轉 591) -->
+          <a href="https://sale.591.com.tw/home/house/detail/2/20561178.html" target="_blank" rel="noopener noreferrer" class="relative block aspect-[16/10] overflow-hidden bg-slate-100 group/img">
+            <img src="https://img2.591.com.tw/house/2026/07/16/178418067872712201.jpg!800x600.jpg" 
+                 alt="【ＬＥＯ】可看！超值｜七期惠宇天青｜最美視野戶附雙平車" 
+                 loading="lazy"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end p-3">
+              <span class="text-xs font-bold text-white flex items-center gap-1 bg-accent-591/90 px-2.5 py-1 rounded-lg backdrop-blur-sm shadow-md">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>前往 591 查看實拍詳情</span>
+              </span>
+            </div>
+            <!-- 分類標籤 -->
+            <div class="absolute top-3 left-3 flex items-center gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold shadow-md bg-amber-600 text-white">
+                西屯七期
+              </span>
+            </div>
+            <!-- 591 專屬標籤 -->
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-0.5 rounded bg-accent-591 text-white text-[10px] font-bold shadow-sm flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3 h-3"></i> 591實拍
               </span>
             </div>
           </a>
@@ -1106,63 +1310,82 @@
           <!-- 卡片內容區 -->
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
             <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="彰化縣彰化市辭修路">彰化縣彰化市辭修路</span>
-                <span class="font-semibold text-slate-600 font-number">56.3 坪</span>
+              <!-- 標籤組 -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>西屯區</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>惠宇天青</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>住宅</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>屋齡17年</span>
               </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20700530.html" target="_blank" rel="noopener noreferrer" title="專簽可看！彰化火車站五房21年美透天學區宅">
-                  專簽可看！彰化火車站五房21年美透天學區宅
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                稀有大面寬透天別墅，室內大使用空間，門前/車庫好停車，三代同堂傳家好宅。
+              <!-- 物件標題 (點擊直接開 591) -->
+              <a href="https://sale.591.com.tw/home/house/detail/2/20561178.html" target="_blank" rel="noopener noreferrer" class="block">
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                  【ＬＥＯ】可看！超值｜七期惠宇天青｜最美視野戶附雙平車
+                </h3>
+              </a>
+              <p class="text-xs text-slate-500 mt-1 truncate flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3 h-3 text-brand-600 flex-shrink-0"></i>
+                <span>台中市西屯區 市政北一路・惠宇天青</span>
               </p>
             </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                5房2廳4衛 ｜ 附車位
+
+            <!-- 物件規格參數 (格狀) -->
+            <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">格局</p>
+                <p class="font-bold text-slate-700 mt-0.5">開放式格局</p>
               </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20700530.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">建坪</p>
+                <p class="font-bold text-slate-700 mt-0.5">126.5 坪</p>
               </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 13 ： 可看！登陽質感全新最超值高樓三房B2連號雙平車 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="nationwide" data-index="13">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20687143.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【可看！登陽質感全新最超值高樓三房B2連號雙平車】詳細屋況">
-            <img src="https://img2.591.com.tw/house/2026/08/09/178624555704744606.jpg!800x600.jpg" alt="可看！登陽質感全新最超值高樓三房B2連號雙平車" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              南區・登陽大地悅章
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 2,080 萬
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">樓層/屋齡</p>
+                <p class="font-bold text-slate-700 mt-0.5 truncate">10/26 樓</p>
+              </div>
             </div>
 
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <!-- 價格與行動按鈕 -->
+            <div class="pt-2 flex items-center justify-between">
+              <div>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-2xl font-black text-rose-600">5,380</span>
+                  <span class="text-xs font-bold text-rose-600">萬</span>
+                </div>
+                <span class='text-[11px] text-slate-400 font-medium'>單價約 42.5 萬/坪</span>
+              </div>
+              <a href="https://sale.591.com.tw/home/house/detail/2/20561178.html" target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-brand-700 hover:bg-brand-800 transition-colors flex items-center gap-1 shadow-sm">
+                <span>看詳情</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 物件卡片 #13 (【ＬＥＯ】可看！北屯興安商圈震後！大面寬雙車美別墅) -->
+        <div class="prop-item hidden extra-property-card bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="beitun" data-id="13">
+          <!-- 卡片圖片區 (直接可點擊跳轉 591) -->
+          <a href="https://sale.591.com.tw/home/house/detail/2/20519706.html" target="_blank" rel="noopener noreferrer" class="relative block aspect-[16/10] overflow-hidden bg-slate-100 group/img">
+            <img src="https://img1.591.com.tw/house/2026/08/25/178765680398367007.jpg!800x600.jpg" 
+                 alt="【ＬＥＯ】可看！北屯興安商圈震後！大面寬雙車美別墅" 
+                 loading="lazy"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end p-3">
+              <span class="text-xs font-bold text-white flex items-center gap-1 bg-accent-591/90 px-2.5 py-1 rounded-lg backdrop-blur-sm shadow-md">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>前往 591 查看實拍詳情</span>
+              </span>
+            </div>
+            <!-- 分類標籤 -->
+            <div class="absolute top-3 left-3 flex items-center gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold shadow-md bg-blue-600 text-white">
+                北屯機捷
+              </span>
+            </div>
+            <!-- 591 專屬標籤 -->
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-0.5 rounded bg-accent-591 text-white text-[10px] font-bold shadow-sm flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3 h-3"></i> 591實拍
               </span>
             </div>
           </a>
@@ -1170,63 +1393,82 @@
           <!-- 卡片內容區 -->
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
             <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市南區福田二街">台中市南區福田二街</span>
-                <span class="font-semibold text-slate-600 font-number">54.3 坪</span>
+              <!-- 標籤組 -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>北屯區</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>松觀太子</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>住宅</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>屋齡14年</span>
               </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20687143.html" target="_blank" rel="noopener noreferrer" title="可看！登陽質感全新最超值高樓三房B2連號雙平車">
-                  可看！登陽質感全新最超值高樓三房B2連號雙平車
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                座落台中市南區福田二街，地段優越生活機能完備，格局方正採光通風極佳，附雙平面車位，置產自住首選。
+              <!-- 物件標題 (點擊直接開 591) -->
+              <a href="https://sale.591.com.tw/home/house/detail/2/20519706.html" target="_blank" rel="noopener noreferrer" class="block">
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                  【ＬＥＯ】可看！北屯興安商圈震後！大面寬雙車美別墅
+                </h3>
+              </a>
+              <p class="text-xs text-slate-500 mt-1 truncate flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3 h-3 text-brand-600 flex-shrink-0"></i>
+                <span>台中市北屯區 興安路二段・松觀太子</span>
               </p>
             </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                3房2廳2衛 ｜ 雙平面車位
+
+            <!-- 物件規格參數 (格狀) -->
+            <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">格局</p>
+                <p class="font-bold text-slate-700 mt-0.5">4房2廳3衛</p>
               </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20687143.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">建坪</p>
+                <p class="font-bold text-slate-700 mt-0.5">44.9 坪</p>
               </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 14 ： 可看！北區名宅順天謙華｜高樓三房B1平車 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="nationwide" data-index="14">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20564176.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【可看！北區名宅順天謙華｜高樓三房B1平車】詳細屋況">
-            <img src="https://img2.591.com.tw/house/2026/07/16/178420206023668000.jpg!800x600.jpg" alt="可看！北區名宅順天謙華｜高樓三房B1平車" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              北區・順天謙華
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 2,438 萬
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">樓層/屋齡</p>
+                <p class="font-bold text-slate-700 mt-0.5 truncate">1~3/3 樓</p>
+              </div>
             </div>
 
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            <!-- 價格與行動按鈕 -->
+            <div class="pt-2 flex items-center justify-between">
+              <div>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-2xl font-black text-rose-600">2,600</span>
+                  <span class="text-xs font-bold text-rose-600">萬</span>
+                </div>
+                <span class='text-[11px] text-slate-400 font-medium'>單價約 57.9 萬/坪</span>
+              </div>
+              <a href="https://sale.591.com.tw/home/house/detail/2/20519706.html" target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-brand-700 hover:bg-brand-800 transition-colors flex items-center gap-1 shadow-sm">
+                <span>看詳情</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 物件卡片 #14 (【ＬＥＯ】可看！超值｜指標豪宅雙橡園2279三房雙平車) -->
+        <div class="prop-item hidden extra-property-card bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="xitun" data-id="14">
+          <!-- 卡片圖片區 (直接可點擊跳轉 591) -->
+          <a href="https://sale.591.com.tw/home/house/detail/2/20499921.html" target="_blank" rel="noopener noreferrer" class="relative block aspect-[16/10] overflow-hidden bg-slate-100 group/img">
+            <img src="https://img1.591.com.tw/house/2026/07/05/178324990544813204.jpg!800x600.jpg" 
+                 alt="【ＬＥＯ】可看！超值｜指標豪宅雙橡園2279三房雙平車" 
+                 loading="lazy"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end p-3">
+              <span class="text-xs font-bold text-white flex items-center gap-1 bg-accent-591/90 px-2.5 py-1 rounded-lg backdrop-blur-sm shadow-md">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>前往 591 查看實拍詳情</span>
+              </span>
+            </div>
+            <!-- 分類標籤 -->
+            <div class="absolute top-3 left-3 flex items-center gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold shadow-md bg-amber-600 text-white">
+                西屯七期
+              </span>
+            </div>
+            <!-- 591 專屬標籤 -->
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-0.5 rounded bg-accent-591 text-white text-[10px] font-bold shadow-sm flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3 h-3"></i> 591實拍
               </span>
             </div>
           </a>
@@ -1234,743 +1476,60 @@
           <!-- 卡片內容區 -->
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
             <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市北區北屯路">台中市北區北屯路</span>
-                <span class="font-semibold text-slate-600 font-number">49 坪</span>
+              <!-- 標籤組 -->
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>西屯區</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>雙橡園2279</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>住宅</span>
+                  <span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>屋齡2年</span>
               </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20564176.html" target="_blank" rel="noopener noreferrer" title="可看！北區名宅順天謙華｜高樓三房B1平車">
-                  可看！北區名宅順天謙華｜高樓三房B1平車
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                座落台中市北區北屯路，地段優越生活機能完備，格局方正採光通風極佳，附平面車位，置產自住首選。
+              <!-- 物件標題 (點擊直接開 591) -->
+              <a href="https://sale.591.com.tw/home/house/detail/2/20499921.html" target="_blank" rel="noopener noreferrer" class="block">
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                  【ＬＥＯ】可看！超值｜指標豪宅雙橡園2279三房雙平車
+                </h3>
+              </a>
+              <p class="text-xs text-slate-500 mt-1 truncate flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3 h-3 text-brand-600 flex-shrink-0"></i>
+                <span>台中市西屯區 馬龍潭路・雙橡園2279</span>
               </p>
             </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                3房2廳2衛 ｜ 平面車位
+
+            <!-- 物件規格參數 (格狀) -->
+            <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">格局</p>
+                <p class="font-bold text-slate-700 mt-0.5">3房2廳2衛</p>
               </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20564176.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">建坪</p>
+                <p class="font-bold text-slate-700 mt-0.5">70.4 坪</p>
               </div>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">樓層/屋齡</p>
+                <p class="font-bold text-slate-700 mt-0.5 truncate">4/33 樓</p>
+              </div>
+            </div>
+
+            <!-- 價格與行動按鈕 -->
+            <div class="pt-2 flex items-center justify-between">
+              <div>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-2xl font-black text-rose-600">4,818</span>
+                  <span class="text-xs font-bold text-rose-600">萬</span>
+                </div>
+                <span class='text-[11px] text-slate-400 font-medium'>單價約 68.4 萬/坪</span>
+              </div>
+              <a href="https://sale.591.com.tw/home/house/detail/2/20499921.html" target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-brand-700 hover:bg-brand-800 transition-colors flex items-center gap-1 shadow-sm">
+                <span>看詳情</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
             </div>
           </div>
-        </article>
-        <!-- 物件卡片 15 ： 可看！南屯首購兩房平車｜微時代高樓低總價 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="nantun" data-index="15">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20563546.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【可看！南屯首購兩房平車｜微時代高樓低總價】詳細屋況">
-            <img src="https://img2.591.com.tw/house/2026/07/16/178419489671005203.jpg!800x600.jpg" alt="可看！南屯首購兩房平車｜微時代高樓低總價" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              南屯區・泓瑞微時代
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 1,398 萬
-            </div>
+        </div>
 
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              </span>
-            </div>
-          </a>
 
-          <!-- 卡片內容區 -->
-          <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市南屯區三和街">台中市南屯區三和街</span>
-                <span class="font-semibold text-slate-600 font-number">27.2 坪</span>
-              </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20563546.html" target="_blank" rel="noopener noreferrer" title="可看！南屯首購兩房平車｜微時代高樓低總價">
-                  可看！南屯首購兩房平車｜微時代高樓低總價
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                座落台中市南屯區三和街，地段優越生活機能完備，格局方正採光通風極佳，附平面車位，置產自住首選。
-              </p>
-            </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                2房1廳1衛 ｜ 平面車位
-              </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20563546.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 16 ： 可看！北屯興安商圈震後！大面寬雙車美別墅 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="beitun" data-index="16">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20519706.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【可看！北屯興安商圈震後！大面寬雙車美別墅】詳細屋況">
-            <img src="https://img1.591.com.tw/house/2026/08/25/178765680398367007.jpg!800x600.jpg" alt="可看！北屯興安商圈震後！大面寬雙車美別墅" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              北屯區・松觀太子
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 2,600 萬
-            </div>
-
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              </span>
-            </div>
-          </a>
-
-          <!-- 卡片內容區 -->
-          <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市北屯區興安路二段">台中市北屯區興安路二段</span>
-                <span class="font-semibold text-slate-600 font-number">44.9 坪</span>
-              </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20519706.html" target="_blank" rel="noopener noreferrer" title="可看！北屯興安商圈震後！大面寬雙車美別墅">
-                  可看！北屯興安商圈震後！大面寬雙車美別墅
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                稀有大面寬透天別墅，室內大使用空間，門前/車庫好停車，三代同堂傳家好宅。
-              </p>
-            </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                4房2廳3衛 ｜ 雙平面車位
-              </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20519706.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 17 ： 可看！超值｜指標豪宅雙橡園2279三房雙平車 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="xitun" data-index="17">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20499921.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【可看！超值｜指標豪宅雙橡園2279三房雙平車】詳細屋況">
-            <img src="https://img2.591.com.tw/house/2026/07/05/178324990544813204.jpg!800x600.jpg" alt="可看！超值｜指標豪宅雙橡園2279三房雙平車" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              西屯區・雙橡園2279
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 4,818 萬
-            </div>
-
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              </span>
-            </div>
-          </a>
-
-          <!-- 卡片內容區 -->
-          <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市西屯區馬龍潭路">台中市西屯區馬龍潭路</span>
-                <span class="font-semibold text-slate-600 font-number">70.4 坪</span>
-              </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20499921.html" target="_blank" rel="noopener noreferrer" title="可看！超值｜指標豪宅雙橡園2279三房雙平車">
-                  可看！超值｜指標豪宅雙橡園2279三房雙平車
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                座落台中市西屯區馬龍潭路，地段優越生活機能完備，格局方正採光通風極佳，附雙平面車位，置產自住首選。
-              </p>
-            </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                3房2廳2衛 ｜ 雙平面車位
-              </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20499921.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 18 ： 可看！西屯惠宇質感大三房雙平車 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="xitun" data-index="18">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20495783.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【可看！西屯惠宇質感大三房雙平車】詳細屋況">
-            <img src="https://img2.591.com.tw/house/2026/07/04/178316469137704406.jpg!800x600.jpg" alt="可看！西屯惠宇質感大三房雙平車" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              西屯區・惠宇寬心
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 3,558 萬
-            </div>
-
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              </span>
-            </div>
-          </a>
-
-          <!-- 卡片內容區 -->
-          <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市西屯區黎明路三段">台中市西屯區黎明路三段</span>
-                <span class="font-semibold text-slate-600 font-number">71.5 坪</span>
-              </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20495783.html" target="_blank" rel="noopener noreferrer" title="可看！西屯惠宇質感大三房雙平車">
-                  可看！西屯惠宇質感大三房雙平車
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                座落台中市西屯區黎明路三段，地段優越生活機能完備，格局方正採光通風極佳，附雙平面車位，置產自住首選。
-              </p>
-            </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                3房2廳2衛 ｜ 雙平面車位
-              </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20495783.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 19 ： 降價！可看！超值！北區高指名社區三房雙平車 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="nationwide" data-index="19">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20493668.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【降價！可看！超值！北區高指名社區三房雙平車】詳細屋況">
-            <img src="https://img1.591.com.tw/house/2026/07/04/178314524397867907.jpg!800x600.jpg" alt="降價！可看！超值！北區高指名社區三房雙平車" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              北區・澄亦實築-澄玥
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 2,380 萬
-            </div>
-
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              </span>
-            </div>
-          </a>
-
-          <!-- 卡片內容區 -->
-          <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市北區健行路">台中市北區健行路</span>
-                <span class="font-semibold text-slate-600 font-number">65.3 坪</span>
-              </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20493668.html" target="_blank" rel="noopener noreferrer" title="降價！可看！超值！北區高指名社區三房雙平車">
-                  降價！可看！超值！北區高指名社區三房雙平車
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                座落台中市北區健行路，地段優越生活機能完備，格局方正採光通風極佳，附雙平面車位，置產自住首選。
-              </p>
-            </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                3房2廳2衛 ｜ 雙平面車位
-              </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20493668.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 20 ： 可看！超值｜七期愛敦閣高樓裝潢三房平車 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="xitun" data-index="20">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20493557.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【可看！超值｜七期愛敦閣高樓裝潢三房平車】詳細屋況">
-            <img src="https://img2.591.com.tw/house/2026/07/04/178314422679406802.jpg!800x600.jpg" alt="可看！超值｜七期愛敦閣高樓裝潢三房平車" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              西屯區・親家愛敦閣
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 3,360 萬
-            </div>
-
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              </span>
-            </div>
-          </a>
-
-          <!-- 卡片內容區 -->
-          <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市西屯區惠中路一段">台中市西屯區惠中路一段</span>
-                <span class="font-semibold text-slate-600 font-number">72.1 坪</span>
-              </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20493557.html" target="_blank" rel="noopener noreferrer" title="可看！超值｜七期愛敦閣高樓裝潢三房平車">
-                  可看！超值｜七期愛敦閣高樓裝潢三房平車
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                緊鄰台中七期市政核心，周邊名校商圈環繞，稀有釋出大器格局，頂級住戶素質與嚴謹物業管理。
-              </p>
-            </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                3房2廳2衛 ｜ 平面車位
-              </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20493557.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 21 ： 可看！全棟最俗嶺東全新三房平車 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="nantun" data-index="21">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20478566.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【可看！全棟最俗嶺東全新三房平車】詳細屋況">
-            <img src="https://img2.591.com.tw/house/2026/07/01/178290815817204803.jpg!800x600.jpg" alt="可看！全棟最俗嶺東全新三房平車" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              南屯區・勝美琚
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 1,666 萬
-            </div>
-
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              </span>
-            </div>
-          </a>
-
-          <!-- 卡片內容區 -->
-          <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市南屯區建功路">台中市南屯區建功路</span>
-                <span class="font-semibold text-slate-600 font-number">44.9 坪</span>
-              </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20478566.html" target="_blank" rel="noopener noreferrer" title="可看！全棟最俗嶺東全新三房平車">
-                  可看！全棟最俗嶺東全新三房平車
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                座落台中市南屯區建功路，地段優越生活機能完備，格局方正採光通風極佳，附平面車位，置產自住首選。
-              </p>
-            </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                3房2廳2衛 ｜ 平面車位
-              </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20478566.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 22 ： 可看！八米大面寬精誠美洋房,稀有釋出 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="west" data-index="22">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20478486.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【可看！八米大面寬精誠美洋房,稀有釋出】詳細屋況">
-            <img src="https://img1.591.com.tw/house/2026/07/01/178290682284990706.jpg!800x600.jpg" alt="可看！八米大面寬精誠美洋房,稀有釋出" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              西區・優質推薦
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 3,880 萬
-            </div>
-
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              </span>
-            </div>
-          </a>
-
-          <!-- 卡片內容區 -->
-          <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市西區精誠八街">台中市西區精誠八街</span>
-                <span class="font-semibold text-slate-600 font-number">36.9 坪</span>
-              </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20478486.html" target="_blank" rel="noopener noreferrer" title="可看！八米大面寬精誠美洋房,稀有釋出">
-                  可看！八米大面寬精誠美洋房,稀有釋出
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                座落台中市西區精誠八街，地段優越生活機能完備，格局方正採光通風極佳，附附車位，置產自住首選。
-              </p>
-            </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                3房2廳2衛 ｜ 附車位
-              </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20478486.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 23 ： 超值！宏銓入深林樹梢戶單價42萬兩戶可選 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="xitun" data-index="23">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20478158.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【超值！宏銓入深林樹梢戶單價42萬兩戶可選】詳細屋況">
-            <img src="https://img2.591.com.tw/house/2026/01/09/176792476136113008.jpg!800x600.jpg" alt="超值！宏銓入深林樹梢戶單價42萬兩戶可選" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              西屯區・宏銓入深林
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 5,680 萬
-            </div>
-
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              </span>
-            </div>
-          </a>
-
-          <!-- 卡片內容區 -->
-          <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市西屯區市政北二路">台中市西屯區市政北二路</span>
-                <span class="font-semibold text-slate-600 font-number">134.3 坪</span>
-              </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20478158.html" target="_blank" rel="noopener noreferrer" title="超值！宏銓入深林樹梢戶單價42萬兩戶可選">
-                  超值！宏銓入深林樹梢戶單價42萬兩戶可選
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                座落台中市西屯區市政北二路，地段優越生活機能完備，格局方正採光通風極佳，附附車位，置產自住首選。
-              </p>
-            </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                開放式格局 ｜ 附車位
-              </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20478158.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 24 ： 降價可看！文華匯最美棟別裝潢戶稀有釋出 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="xitun" data-index="24">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20478122.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【降價可看！文華匯最美棟別裝潢戶稀有釋出】詳細屋況">
-            <img src="https://img1.591.com.tw/house/2026/01/08/176786567669967101.jpg!800x600.jpg" alt="降價可看！文華匯最美棟別裝潢戶稀有釋出" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              西屯區・文華匯
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 1,568 萬
-            </div>
-
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              </span>
-            </div>
-          </a>
-
-          <!-- 卡片內容區 -->
-          <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市西屯區市政南一路">台中市西屯區市政南一路</span>
-                <span class="font-semibold text-slate-600 font-number">30.6 坪</span>
-              </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20478122.html" target="_blank" rel="noopener noreferrer" title="降價可看！文華匯最美棟別裝潢戶稀有釋出">
-                  降價可看！文華匯最美棟別裝潢戶稀有釋出
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                座落台中市西屯區市政南一路，地段優越生活機能完備，格局方正採光通風極佳，附附車位，置產自住首選。
-              </p>
-            </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                2房2廳1衛 ｜ 附車位
-              </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20478122.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-        <!-- 物件卡片 25 ： 可看！南屯精銳建設高樓三房平車 -->
-        <article class="custom-property-card rounded-xl overflow-hidden flex flex-col group prop-item extra-property-card hidden" data-category="nantun" data-index="25">
-          
-          <!-- 圖片區塊 (點擊整張照片直接跳轉 591 該物件專屬網頁) -->
-          <a href="https://sale.591.com.tw/home/house/detail/2/20478000.html" target="_blank" rel="noopener noreferrer" 
-             class="relative block aspect-[16/10] overflow-hidden bg-slate-100 cursor-pointer group/img" 
-             title="點擊前往 591 查看【可看！南屯精銳建設高樓三房平車】詳細屋況">
-            <img src="https://img1.591.com.tw/house/2026/07/12/178384361042666507.jpg!800x600.jpg" alt="可看！南屯精銳建設高樓三房平車" class="prop-img w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
-            
-            <!-- 左上角地段標籤 -->
-            <div class="location-badge-dark absolute top-2.5 left-2.5 text-xs font-semibold px-2.5 py-1 rounded shadow-sm z-10">
-              南屯區・精銳香草天籟
-            </div>
-            
-            <!-- 右下角總價標籤 -->
-            <div class="price-banner-591 absolute bottom-2.5 right-0 text-xs sm:text-sm font-bold px-3 py-1 shadow-md z-10 rounded-l-sm">
-              總價 1,698 萬
-            </div>
-
-            <!-- 懸浮提示條 (Hover Overlay) -->
-            <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-              <span class="px-3 py-1.5 rounded-full bg-slate-950/80 text-white text-xs font-bold backdrop-blur-sm flex items-center gap-1 shadow-lg">
-                <span>前往 591 查看屋況</span>
-                <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-              </span>
-            </div>
-          </a>
-
-          <!-- 卡片內容區 -->
-          <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
-            <div>
-              <div class="flex justify-between items-center text-xs text-slate-500 mb-1.5">
-                <span class="truncate max-w-[65%]" title="台中市南屯區義芳街">台中市南屯區義芳街</span>
-                <span class="font-semibold text-slate-600 font-number">47.2 坪</span>
-              </div>
-              
-              <!-- 標題連結 (點擊標題亦可跳轉 591) -->
-              <h3 class="font-bold text-base sm:text-lg text-slate-900 leading-snug line-clamp-1 mb-2 hover:text-brand-700 transition-colors">
-                <a href="https://sale.591.com.tw/home/house/detail/2/20478000.html" target="_blank" rel="noopener noreferrer" title="可看！南屯精銳建設高樓三房平車">
-                  可看！南屯精銳建設高樓三房平車
-                </a>
-              </h3>
-              
-              <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-1">
-                座落台中市南屯區義芳街，地段優越生活機能完備，格局方正採光通風極佳，附平面車位，置產自住首選。
-              </p>
-            </div>
-            
-            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-              <div class="text-slate-700 font-medium truncate max-w-[50%]">
-                3房2廳2衛 ｜ 平面車位
-              </div>
-              <div class="flex items-center gap-3">
-                <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="text-slate-600 hover:text-brand-700 font-medium transition-colors">
-                  本站解析
-                </a>
-                <a href="https://sale.591.com.tw/home/house/detail/2/20478000.html" target="_blank" rel="noopener noreferrer" class="text-accent-591 hover:text-orange-600 font-bold flex items-center gap-0.5 transition-colors">
-                  <span>591 詳情</span>
-                  <svg class="w-3.5 h-3.5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
       </div>
 
       <!-- 展開更多物件按鈕 -->
