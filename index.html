@@ -1532,14 +1532,14 @@
 
       </div>
 
-      <!-- 展開更多物件按鈕 -->
+      <!-- 展開更多物件按鈕 (隨 591 最新總數自動動態更新) -->
       <div id="expand-properties-container" class="mt-10 text-center">
         <button id="expand-btn" type="button" onclick="toggleExpandProperties()"
                 class="btn-hover-effect inline-flex items-center gap-2 px-8 py-4 rounded-2xl text-xs sm:text-sm font-bold text-brand-800 bg-white border-2 border-brand-200 hover:border-brand-600 hover:bg-brand-50 shadow-md transition-all cursor-pointer">
           <svg id="expand-btn-icon" class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
           </svg>
-          <span id="expand-btn-text">展開瀏覽更多好房（已顯示 3 / 25 件）</span>
+          <span id="expand-btn-text">展開瀏覽更多好房（已顯示 6 / 14 件）</span>
         </button>
       </div>
 
@@ -1593,100 +1593,76 @@
             </div>
 
             <div class="flex items-center gap-3.5 p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm">
-              <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center">
+              <div class="w-10 h-10 rounded-lg bg-emerald-50 text-accent-line flex items-center justify-center">
                 <i data-lucide="message-circle" class="w-5 h-5"></i>
               </div>
               <div>
-                <p class="text-xs text-slate-500">LINE 官方帳號 / ID</p>
-                <p class="text-sm font-bold text-slate-800" id="form-line-id">leo810624</p>
+                <p class="text-xs text-slate-500">LINE 官方諮詢</p>
+                <p class="text-sm font-bold text-slate-800" id="form-line">leo810624</p>
               </div>
             </div>
 
             <div class="flex items-center gap-3.5 p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm">
-              <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-700 flex items-center justify-center">
+              <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand-700 flex items-center justify-center">
                 <i data-lucide="map-pin" class="w-5 h-5"></i>
               </div>
               <div>
-                <p class="text-xs text-slate-500">服務門市</p>
-                <p class="text-sm font-bold text-slate-800" id="form-address">群義房屋 七期市政店 (台中市南屯區河南路四段150號)</p>
+                <p class="text-xs text-slate-500">門市據點</p>
+                <p class="text-sm font-bold text-slate-800" id="form-address">台中市南屯區河南路四段150號 (群義房屋 七期市政店)</p>
               </div>
             </div>
           </div>
-
         </div>
 
-        <!-- 右側：表單卡片 -->
+        <!-- 右側：線上預約表單 -->
         <div class="lg:col-span-7">
-          <div class="bg-white rounded-3xl p-6 sm:p-8 lg:p-10 shadow-xl border border-slate-200">
-            <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-              <i data-lucide="file-edit" class="w-5 h-5 text-brand-700"></i>
-              <span>線上諮詢與賞屋需求填寫</span>
-            </h3>
+          <div class="glass-card rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200 bg-white">
+            <h3 class="text-xl font-bold text-slate-900 mb-1">填寫預約需求</h3>
+            <p class="text-xs text-slate-500 mb-6">填寫後書恩將於 24 小時內與您聯繫，為您準備專屬行情分析報告</p>
 
-            <form id="inquiry-form" class="space-y-4">
-              
-              <!-- 姓名 & 電話 -->
+            <form id="booking-form" class="space-y-4" onsubmit="event.preventDefault(); alert('感謝您的預約！書恩將於第一時間與您聯繫！');">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-xs font-semibold text-slate-700 mb-1.5">您的姓名 <span class="text-rose-500">*</span></label>
-                  <input type="text" id="client-name" required placeholder="例如：林先生 / 陳小姐"
-                         class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all">
+                  <label class="block text-xs font-bold text-slate-700 mb-1.5">您的姓名 *</label>
+                  <input type="text" required placeholder="例如：陳先生 / 林小姐" 
+                         class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-600 focus:ring-2 focus:ring-brand-100 outline-none text-sm transition-all bg-slate-50/50">
                 </div>
                 <div>
-                  <label class="block text-xs font-semibold text-slate-700 mb-1.5">聯絡電話 <span class="text-rose-500">*</span></label>
-                  <input type="tel" id="client-phone" required placeholder="例如：0912-345-678"
-                         class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all">
+                  <label class="block text-xs font-bold text-slate-700 mb-1.5">聯絡電話 *</label>
+                  <input type="tel" required placeholder="例如：0912-345-678" 
+                         class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-600 focus:ring-2 focus:ring-brand-100 outline-none text-sm transition-all bg-slate-50/50">
                 </div>
               </div>
 
-              <!-- LINE ID & 需求類型 -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-xs font-semibold text-slate-700 mb-1.5">LINE ID (便於傳送物件資料)</label>
-                  <input type="text" id="client-line" placeholder="選填，方便加入好友"
-                         class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all">
+                  <label class="block text-xs font-bold text-slate-700 mb-1.5">LINE ID</label>
+                  <input type="text" placeholder="方便線上即時溝通" 
+                         class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-600 focus:ring-2 focus:ring-brand-100 outline-none text-sm transition-all bg-slate-50/50">
                 </div>
                 <div>
-                  <label class="block text-xs font-semibold text-slate-700 mb-1.5">諮詢類型 <span class="text-rose-500">*</span></label>
-                  <select id="client-type" required
-                          class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all bg-white">
-                    <option value="buy">想買屋 / 預約賞屋</option>
-                    <option value="sell">委託售屋 / 估價行情</option>
-                    <option value="rent">豪宅租賃代管</option>
-                    <option value="tax">房貸與房地合一稅務諮詢</option>
-                    <option value="other">全台跨區其他置產需求</option>
+                  <label class="block text-xs font-bold text-slate-700 mb-1.5">諮詢類型 *</label>
+                  <select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-600 focus:ring-2 focus:ring-brand-100 outline-none text-sm transition-all bg-slate-50/50">
+                    <option value="buy">買方・預約現場賞屋</option>
+                    <option value="sell">屋主・全台委託售屋 / 估價</option>
+                    <option value="market">諮詢・七期實價登錄行情</option>
+                    <option value="tax">諮詢・房地合一稅與資產規劃</option>
+                    <option value="other">其他房產需求</option>
                   </select>
                 </div>
               </div>
 
-              <!-- 想了解的物件 / 區域與預算 -->
               <div>
-                <label class="block text-xs font-semibold text-slate-700 mb-1.5">理想區域 / 591 物件名稱 / 預算考量</label>
-                <input type="text" id="client-budget" placeholder="例如：西屯七期豪宅 / 預算 3000~5000 萬 / 3房平車"
-                       class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all">
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">有興趣的物件或需求說明</label>
+                <textarea rows="3" placeholder="例如：想看【草間漫漫】或預算 3,000 萬左右七期三房..." 
+                          class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-600 focus:ring-2 focus:ring-brand-100 outline-none text-sm transition-all bg-slate-50/50 resize-none"></textarea>
               </div>
 
-              <!-- 備註說明 -->
-              <div>
-                <label class="block text-xs font-semibold text-slate-700 mb-1.5">需求備註 / 方便通話時段</label>
-                <textarea id="client-message" rows="3" placeholder="請描述您的特殊需求，或希望何時帶看..."
-                          class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all"></textarea>
-              </div>
-
-              <!-- 隱私宣告 -->
-              <p class="text-[11px] text-slate-400">
-                🔒 我們重視您的個人隱私，填寫之資料僅用於本次房地產專業諮詢與預約帶看，絕不對外透露。
-              </p>
-
-              <!-- 送出按鈕 -->
-              <div class="pt-2">
-                <button type="submit"
-                        class="btn-hover-effect w-full py-4 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-800 hover:to-brand-700 shadow-lg shadow-brand-700/25 flex items-center justify-center gap-2">
-                  <i data-lucide="send" class="w-4 h-4"></i>
-                  <span>送出預約諮詢需求</span>
-                </button>
-              </div>
-
+              <button type="submit" 
+                      class="w-full py-3.5 px-6 rounded-xl font-bold text-white bg-gradient-to-r from-brand-700 via-brand-600 to-brand-500 hover:opacity-95 shadow-md shadow-brand-500/20 transition-all text-sm flex items-center justify-center gap-2 cursor-pointer">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>立即送出預約需求</span>
+              </button>
             </form>
           </div>
         </div>
@@ -1698,99 +1674,102 @@
 
 
   <!-- =========================================================================
-       7. 頁尾法規資訊與版權宣告 (Footer)
+       7. 頁尾資訊區 (Footer)
        ========================================================================= -->
-  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-xs leading-relaxed pb-28 md:pb-12">
+  <footer class="bg-slate-900 text-slate-300 pt-16 pb-12 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-slate-800">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
         
-        <!-- 左側：品牌資訊 -->
-        <div class="md:col-span-6 space-y-3">
-          <div class="flex items-center gap-2 text-white font-bold text-base">
-            <i data-lucide="building-2" class="w-5 h-5 text-brand-400"></i>
-            <span id="footer-brand-store">群義房屋 七期市政店</span>
+        <!-- 品牌區塊 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-xl bg-brand-500 flex items-center justify-center text-white font-bold text-base shadow-md">
+              <i data-lucide="building-2" class="w-5 h-5"></i>
+            </div>
+            <span class="font-bold text-lg text-white tracking-tight">群義房屋 七期市政店</span>
           </div>
-          <p id="footer-company" class="text-slate-400">群義不動產經紀股份有限公司</p>
-          <div class="space-y-1 text-slate-400">
-            <p id="footer-license">經紀人證號：林福昌 (91)嘉字第00027號(換發)</p>
-            <p id="footer-address">門市地址：台中市南屯區河南路四段150號</p>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            買賣房屋・請找最認真的書恩。深耕七期、跨區全台精準接洽委託，為您的資產與家做最嚴格的把關！
+          </p>
+          <div class="pt-1">
+            <span class="inline-block px-3 py-1 rounded-full bg-slate-800 text-[11px] font-semibold text-brand-300 border border-slate-700" id="footer-broker-badge">
+              經紀人：林福昌 (91)嘉字第00027號(換發)
+            </span>
           </div>
         </div>
 
-        <!-- 右側：快捷連結 -->
-        <div class="md:col-span-6 flex flex-wrap items-center justify-start md:justify-end gap-3">
-          <a id="footer-line-link" href="https://line.me/ti/p/~leo810624" target="_blank" class="px-3.5 py-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors flex items-center gap-1.5">
-            <i data-lucide="message-circle" class="w-4 h-4 text-emerald-400"></i>
-            <span>加 LINE 好友</span>
-          </a>
-          <a id="footer-591-link" href="https://www.591.com.tw/broker45609-sale" target="_blank" class="px-3.5 py-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors flex items-center gap-1.5">
-            <i data-lucide="store" class="w-4 h-4 text-orange-400"></i>
-            <span>591 專屬店鋪</span>
-          </a>
-          <a id="footer-fb-link" href="https://www.facebook.com/profile.php?id=100088596440774" target="_blank" class="px-3.5 py-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors flex items-center gap-1.5">
-            <i data-lucide="facebook" class="w-4 h-4 text-blue-400"></i>
-            <span>FB 台中房地產Leo</span>
-          </a>
-          <a id="footer-ig-link" href="https://www.instagram.com/leohome624" target="_blank" class="px-3.5 py-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors flex items-center gap-1.5">
-            <i data-lucide="instagram" class="w-4 h-4 text-pink-400"></i>
-            <span>Instagram</span>
-          </a>
+        <!-- 快速連結 -->
+        <div>
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-brand-500 pl-2">快速導航</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li><a href="#hero" class="hover:text-white transition-colors">首頁個人形象</a></li>
+            <li><a href="#properties" class="hover:text-white transition-colors text-accent-591 font-bold">591 精選在庫好房</a></li>
+            <li><a href="#channels" class="hover:text-white transition-colors">社群與通訊專區</a></li>
+            <li><a href="#contact" class="hover:text-white transition-colors">線上預約賞屋</a></li>
+          </ul>
+        </div>
+
+        <!-- 社群矩陣快速入口 -->
+        <div>
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-brand-500 pl-2">社群與店鋪</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li>
+              <a href="https://www.591.com.tw/broker45609-sale" target="_blank" rel="noopener noreferrer" class="hover:text-accent-591 transition-colors flex items-center gap-1.5">
+                <i data-lucide="store" class="w-3.5 h-3.5 text-accent-591"></i>
+                <span>591 專屬店鋪（在售案件在庫）</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://line.me/ti/p/~leo810624" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors flex items-center gap-1.5">
+                <i data-lucide="message-circle" class="w-3.5 h-3.5 text-accent-line"></i>
+                <span>LINE 一對一諮詢 (ID: leo810624)</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/profile.php?id=100088596440774" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors flex items-center gap-1.5">
+                <i data-lucide="facebook" class="w-3.5 h-3.5 text-blue-400"></i>
+                <span>Facebook 粉絲專頁 (台中房地產Leo)</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/leohome624" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition-colors flex items-center gap-1.5">
+                <i data-lucide="instagram" class="w-3.5 h-3.5 text-pink-400"></i>
+                <span>Instagram (@leohome624)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 聯絡與門市 -->
+        <div>
+          <h4 class="text-xs font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-brand-500 pl-2">門市據點</h4>
+          <div class="space-y-2 text-xs text-slate-400 leading-relaxed">
+            <p><strong class="text-white">群義房屋 七期市政店</strong></p>
+            <p>服務電話：<a href="tel:0982203063" class="text-white hover:text-brand-300 font-bold">0982-203-063</a></p>
+            <p>門市地址：台中市南屯區河南路四段150號</p>
+            <p class="text-[11px] text-slate-500 pt-1">
+              經紀業特許字號：林福昌 (91)嘉字第00027號(換發)
+            </p>
+          </div>
         </div>
 
       </div>
 
-      <!-- 免責聲明與版權 -->
-      <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-slate-400 text-[11px]">
-        <p>© 2026 群義房屋 七期市政店 黃書恩. All rights reserved. 刊登物件資料以主管機關謄本登記及 591 實際最新刊登為準。</p>
-        <p>買賣房屋請找最認真的書恩・全台房屋買賣委託服務</p>
+      <!-- 版權列 -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4">
+        <p>© 2026 群義房屋 七期市政店 黃書恩 (LEO). All rights reserved.</p>
+        <p class="flex items-center gap-2">
+          <span>買賣房屋請找最認真的書恩</span>
+          <span>•</span>
+          <span>591 嚴選在庫物件同步中</span>
+        </p>
       </div>
 
     </div>
   </footer>
 
-
-  <!-- =========================================================================
-       8. 手機端固定置底快捷列 (Mobile Sticky Action Bar)
-       ========================================================================= -->
-  <div class="md:hidden fixed bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur-xl border-t border-slate-200 px-3 py-2.5 mobile-bottom-bar shadow-2xl">
-    <div class="grid grid-cols-4 gap-2">
-      <!-- 撥打電話 -->
-      <a id="sticky-phone" href="tel:0982203063"
-         class="flex flex-col items-center justify-center py-1.5 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 text-center">
-        <i data-lucide="phone" class="w-4 h-4 text-brand-700"></i>
-        <span class="text-[10px] font-bold mt-1">撥打電話</span>
-      </a>
-
-      <!-- 591 物件 -->
-      <a id="sticky-591" href="https://www.591.com.tw/broker45609-sale" target="_blank" 
-         class="flex flex-col items-center justify-center py-1.5 rounded-xl bg-orange-50 text-orange-700 hover:bg-orange-100 text-center">
-        <i data-lucide="store" class="w-4 h-4 text-accent-591"></i>
-        <span class="text-[10px] font-bold mt-1">591 物件</span>
-      </a>
-
-      <!-- 加 LINE -->
-      <a id="sticky-line" href="https://line.me/ti/p/~leo810624" target="_blank" 
-         class="col-span-2 flex items-center justify-center gap-1.5 py-1.5 rounded-xl bg-accent-line text-white font-bold text-xs shadow-md">
-        <i data-lucide="message-circle" class="w-4 h-4"></i>
-        <span>LINE 免費諮詢</span>
-      </a>
-    </div>
-  </div>
-
-
-  <!-- =========================================================================
-       9. 互動反饋 Toast 提示條 (Interactive Notification)
-       ========================================================================= -->
-  <div id="toast" class="fixed top-24 left-1/2 -translate-x-1/2 z-50 opacity-0 -translate-y-4 pointer-events-none transition-all duration-300">
-    <div class="px-5 py-3 rounded-2xl bg-slate-900 text-white text-xs font-semibold shadow-2xl flex items-center gap-2 border border-slate-700">
-      <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
-      <span id="toast-message">已成功複製 LINE ID！</span>
-    </div>
-  </div>
-
-
-  <!-- 載入腳本：設定檔與核心邏輯 -->
+  <!-- 引用腳本 -->
   <script src="js/config.js"></script>
   <script src="js/main.js"></script>
 </body>

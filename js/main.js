@@ -3,12 +3,13 @@
  * 房仲個人網站核心前端腳本 (Main JavaScript Logic)
  * 品牌：群義房屋 七期市政店
  * 經紀人：黃書恩 (LEO)
+ * 核心功能：591 雲端即時動態連線同步 ＋ 本地快速渲染
  * ==============================================================================
  */
 
-// 全域展開/收合狀態變數
 window.isAllPropertiesExpanded = false;
 window.currentActiveCategory = "all";
+window.livePropertiesData = [];
 
 /**
  * 點擊【展開瀏覽更多好房 / 收合】的切換函數
@@ -39,12 +40,14 @@ window.toggleExpandProperties = function() {
     }
   });
 
+  const totalCount = window.livePropertiesData.length || document.querySelectorAll(".prop-item").length || 14;
+
   if (expandBtnText) {
     if (window.isAllPropertiesExpanded) {
-      expandBtnText.textContent = "收合部分物件（目前已顯示全部 25 件）";
+      expandBtnText.textContent = `收合部分物件（目前已顯示全部 ${totalCount} 件）`;
       if (expandBtnIcon) expandBtnIcon.style.transform = "rotate(180deg)";
     } else {
-      expandBtnText.textContent = "展開瀏覽更多好房（已顯示 3 / 25 件）";
+      expandBtnText.textContent = `展開瀏覽更多好房（已顯示 6 / ${totalCount} 件）`;
       if (expandBtnIcon) expandBtnIcon.style.transform = "rotate(0deg)";
       if (propertiesSec) {
         propertiesSec.scrollIntoView({ behavior: "smooth" });
@@ -62,7 +65,6 @@ window.filterPropertiesCategory = function(category, btnElement) {
   const expandContainer = document.getElementById("expand-properties-container");
   const tabs = document.querySelectorAll("#property-tabs .tab-btn");
 
-  // 更新分頁標籤按鈕高亮
   tabs.forEach(t => t.classList.remove("active"));
   if (btnElement) btnElement.classList.add("active");
 
@@ -72,7 +74,7 @@ window.filterPropertiesCategory = function(category, btnElement) {
 
     if (isMatch) {
       if (category === "all") {
-        if (window.isAllPropertiesExpanded || index < 3) {
+        if (window.isAllPropertiesExpanded || index < 6) {
           card.classList.remove("hidden");
           card.style.display = "flex";
         } else {
@@ -80,7 +82,6 @@ window.filterPropertiesCategory = function(category, btnElement) {
           card.style.display = "none";
         }
       } else {
-        // 分類檢視時直接顯示該分類全部
         card.classList.remove("hidden");
         card.style.display = "flex";
       }
@@ -101,241 +102,174 @@ window.filterPropertiesCategory = function(category, btnElement) {
   }
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+/**
+ * 動態渲染 591 物件卡片 (當雲端 API 獲取到最新資料時自動觸發)
+ */
+function renderPropertiesToGrid(props) {
+  const grid = document.getElementById("properties-grid");
+  if (!grid || !props || props.length === 0) return;
+
+  window.livePropertiesData = props;
+  const totalCount = props.length;
+
+  // 更新所有計數標籤
+  const headerCount = document.getElementById("header-591-count");
+  if (headerCount) headerCount.textContent = totalCount;
+
+  const countAll = document.getElementById("count-all");
+  if (countAll) countAll.textContent = totalCount;
+
+  const expandBtnText = document.getElementById("expand-btn-text");
+  if (expandBtnText && !window.isAllPropertiesExpanded) {
+    expandBtnText.textContent = `展開瀏覽更多好房（已顯示 6 / ${totalCount} 件）`;
+  }
+
+  let html = "";
+
+  props.forEach((p, idx) => {
+    let badgeStyle = "bg-brand-700 text-white";
+    if (p.category === "xitun") badgeStyle = "bg-amber-600 text-white";
+    else if (p.category === "nantun") badgeStyle = "bg-emerald-600 text-white";
+    else if (p.category === "west") badgeStyle = "bg-purple-600 text-white";
+    else if (p.category === "beitun") badgeStyle = "bg-blue-600 text-white";
+
+    const isExtra = idx >= 6;
+    const extraClass = isExtra && !window.isAllPropertiesExpanded ? "hidden extra-property-card" : (isExtra ? "extra-property-card" : "");
+    const tagsHtml = (p.tags || []).map(t => `<span class='px-2 py-0.5 rounded-md bg-slate-100 text-[11px] font-semibold text-slate-600'>${t}</span>`).join("\n                  ");
+    const unitPriceDisplay = p.unitPrice ? `<span class='text-[11px] text-slate-400 font-medium'>單價約 ${p.unitPrice} 萬/坪</span>` : "";
+    const floorDisplay = p.floor ? `${p.floor} 樓` : "高樓層";
+
+    html += `
+        <!-- 物件卡片 #${p.id} (${p.title}) -->
+        <div class="prop-item ${extraClass} bg-white rounded-2xl overflow-hidden border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group" data-category="${p.category}" data-id="${p.id}">
+          <!-- 卡片圖片區 (直接可點擊跳轉 591) -->
+          <a href="${p.link591}" target="_blank" rel="noopener noreferrer" class="relative block aspect-[16/10] overflow-hidden bg-slate-100 group/img">
+            <img src="${p.imageUrl}" 
+                 alt="${p.title}" 
+                 loading="lazy"
+                 class="w-full h-full object-cover transition-transform duration-500 group-hover/img:scale-105">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end p-3">
+              <span class="text-xs font-bold text-white flex items-center gap-1 bg-accent-591/90 px-2.5 py-1 rounded-lg backdrop-blur-sm shadow-md">
+                <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                <span>前往 591 查看實拍詳情</span>
+              </span>
+            </div>
+            <!-- 分類標籤 -->
+            <div class="absolute top-3 left-3 flex items-center gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-bold shadow-md ${badgeStyle}">
+                ${p.categoryName}
+              </span>
+            </div>
+            <!-- 591 專屬標籤 -->
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-0.5 rounded bg-accent-591 text-white text-[10px] font-bold shadow-sm flex items-center gap-1">
+                <i data-lucide="check-circle-2" class="w-3 h-3"></i> 591實拍
+              </span>
+            </div>
+          </a>
+
+          <!-- 卡片內容區 -->
+          <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-2">
+                ${tagsHtml}
+              </div>
+              <a href="${p.link591}" target="_blank" rel="noopener noreferrer" class="block">
+                <h3 class="font-bold text-base sm:text-lg text-slate-900 group-hover:text-brand-700 transition-colors line-clamp-2 leading-snug">
+                  ${p.title}
+                </h3>
+              </a>
+              <p class="text-xs text-slate-500 mt-1 truncate flex items-center gap-1">
+                <i data-lucide="map-pin" class="w-3 h-3 text-brand-600 flex-shrink-0"></i>
+                <span>${p.location}・${p.community}</span>
+              </p>
+            </div>
+
+            <!-- 物件規格參數 -->
+            <div class="pt-3 border-t border-slate-100 grid grid-cols-3 gap-2 text-center text-xs">
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">格局</p>
+                <p class="font-bold text-slate-700 mt-0.5">${p.layout}</p>
+              </div>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">建坪</p>
+                <p class="font-bold text-slate-700 mt-0.5">${p.area} 坪</p>
+              </div>
+              <div class="p-1.5 rounded-lg bg-slate-50">
+                <p class="text-[10px] text-slate-400">樓層</p>
+                <p class="font-bold text-slate-700 mt-0.5 truncate">${floorDisplay}</p>
+              </div>
+            </div>
+
+            <!-- 價格與行動按鈕 -->
+            <div class="pt-2 flex items-center justify-between">
+              <div>
+                <div class="flex items-baseline gap-1">
+                  <span class="text-2xl font-black text-rose-600">${p.price}</span>
+                  <span class="text-xs font-bold text-rose-600">萬</span>
+                </div>
+                ${unitPriceDisplay}
+              </div>
+              <a href="${p.link591}" target="_blank" rel="noopener noreferrer"
+                 class="px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-brand-700 hover:bg-brand-800 transition-colors flex items-center gap-1 shadow-sm">
+                <span>看詳情</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+    `;
+  });
+
+  grid.innerHTML = html;
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
+}
+
+/**
+ * 自動雲端連線 591 API (零手動操作，用戶打開網頁時自動即時同步)
+ */
+async function autoFetchLive591() {
   try {
-    const config = window.REALTOR_CONFIG;
-    if (config) {
-      initAgentProfile(config.agent, config.contact);
-      initSocialLinks(config.contact);
-      initServiceAreas(config.serviceAreas);
-      initAchievements(config.achievements);
-      initFormHandler(config.contact);
-      initCopyLine(config.contact.lineId);
-    }
-
-    initPropertyEvents();
-    initMobileMenu();
-
-    if (window.lucide) {
-      window.lucide.createIcons();
+    // 優先呼叫 Vercel Serverless Function /api/properties
+    const res = await fetch("/api/properties");
+    if (res.ok) {
+      const json = await res.json();
+      if (json && json.data && json.data.length > 0) {
+        console.log(`[591 Auto-Sync] Successfully loaded ${json.data.length} live properties from 591 cloud.`);
+        renderPropertiesToGrid(json.data);
+      }
     }
   } catch (err) {
-    console.error("初始化腳本時發生錯誤:", err);
+    console.log("[591 Auto-Sync] Running in static/local mode.");
   }
-});
+}
 
-/**
- * 綁定物件卡片展開與篩選事件
- */
-function initPropertyEvents() {
-  const expandBtn = document.getElementById("expand-btn");
-  if (expandBtn) {
-    expandBtn.onclick = function(e) {
-      e.preventDefault();
-      window.toggleExpandProperties();
-    };
+// 頁面加載完成後執行
+document.addEventListener("DOMContentLoaded", () => {
+  if (window.lucide) {
+    window.lucide.createIcons();
   }
 
-  const tabs = document.querySelectorAll("#property-tabs .tab-btn");
-  tabs.forEach(tab => {
-    tab.onclick = function(e) {
-      e.preventDefault();
-      const filter = this.getAttribute("data-filter") || "all";
-      window.filterPropertiesCategory(filter, this);
-    };
-  });
-}
-
-/**
- * 填入個人基本資料與文字
- */
-function initAgentProfile(agent, contact) {
-  if (!agent || !contact) return;
-  setElementText("nav-brand-store", `${agent.brand} ${agent.store}`);
-  setElementText("nav-agent-name", agent.name);
-  setElementText("nav-agent-title", agent.title);
-
-  setElementText("hero-badge", `${agent.brand} ${agent.store}・${agent.title.split("/")[0].trim()}`);
-  setElementText("hero-license", agent.licenseNumber);
-  setElementText("hero-phone-display", contact.phone);
-
-  const heroLineCta = document.getElementById("hero-line-cta");
-  if (heroLineCta) heroLineCta.href = contact.lineUrl;
-
-  const heroPhoneCta = document.getElementById("hero-phone-cta");
-  if (heroPhoneCta) heroPhoneCta.href = `tel:${contact.phoneRaw}`;
-
-  const agentPhoto = document.getElementById("agent-photo");
-  if (agentPhoto && agent.photoUrl) {
-    agentPhoto.src = agent.photoUrl;
-    agentPhoto.alt = `${agent.brand} ${agent.store} ${agent.name}`;
-  }
-  setElementText("card-agent-name", agent.name);
-  setElementText("card-agent-title", `${agent.brand}・${agent.title}`);
-  setElementText("card-phone", contact.phone);
-
-  setElementText("footer-brand-store", `${agent.brand} ${agent.store}`);
-  setElementText("footer-company", agent.company);
-  setElementText("footer-license", `經紀人證號：${agent.licenseNumber}`);
-  setElementText("footer-address", `門市地址：${agent.address}`);
-
-  setElementText("form-phone", contact.phone);
-  setElementText("form-line-id", contact.lineId);
-  setElementText("form-address", `${agent.brand} ${agent.store} (${agent.address})`);
-}
-
-/**
- * 綁定所有社群與外部平台連結
- */
-function initSocialLinks(contact) {
-  if (!contact) return;
-  setElementHref("nav-591-btn", contact.store591Url);
-  setElementHref("nav-line-btn", contact.lineUrl);
-  setElementHref("mobile-nav-591", contact.store591Url);
-  setElementHref("mobile-nav-line", contact.lineUrl);
-
-  setElementHref("channel-591", contact.store591Url);
-  setElementHref("header-591-all-link", contact.store591Url);
-  setElementHref("sticky-591", contact.store591Url);
-  setElementHref("footer-591-link", contact.store591Url);
-
-  setElementHref("channel-line", contact.lineUrl);
-  setElementHref("sticky-line", contact.lineUrl);
-  setElementHref("footer-line-link", contact.lineUrl);
-  setElementText("channel-line-id", contact.lineId);
-
-  setElementHref("channel-fb", contact.facebookUrl);
-  setElementHref("footer-fb-link", contact.facebookUrl);
-
-  setElementHref("channel-ig", contact.instagramUrl);
-  setElementHref("footer-ig-link", contact.instagramUrl);
-  setElementText("channel-ig-handle", contact.instagramHandle || "@leohome624");
-
-  const stickyPhone = document.getElementById("sticky-phone");
-  if (stickyPhone) stickyPhone.href = `tel:${contact.phoneRaw}`;
-}
-
-/**
- * 渲染服務區域標籤
- */
-function initServiceAreas(serviceAreas) {
-  const container = document.getElementById("service-tags-container");
-  if (!container || !serviceAreas) return;
-
-  container.innerHTML = serviceAreas.map((area, index) => {
-    const isSpecial = index === serviceAreas.length - 1;
-    const bgClass = isSpecial 
-      ? "bg-brand-50 border-brand-200 text-brand-700 font-bold" 
-      : "bg-white border-slate-200 text-slate-700";
-    return `
-      <span class="px-3 py-1 rounded-lg border ${bgClass} text-xs font-semibold shadow-sm inline-flex items-center gap-1" title="${area.desc}">
-        ${area.name}
-      </span>
-    `;
-  }).join("");
-}
-
-/**
- * 渲染成就數據
- */
-function initAchievements(achievements) {
-  const container = document.getElementById("stats-container");
-  if (!container || !achievements) return;
-
-  container.innerHTML = achievements.map(item => `
-    <div class="space-y-1 p-2">
-      <p class="text-3xl sm:text-4xl font-extrabold text-brand-700 font-number">
-        ${item.number}
-      </p>
-      <p class="text-xs sm:text-sm text-slate-500 font-medium">${item.label}</p>
-    </div>
-  `).join("");
-}
-
-/**
- * 表單提交處理
- */
-function initFormHandler(contact) {
-  const form = document.getElementById("inquiry-form");
-  if (!form) return;
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const name = document.getElementById("client-name")?.value || "";
-    const shouldOpenLine = confirm(`感謝您的填寫，${name}！\n\n我們已收到您的諮詢需求。是否立即開啟 LINE 將您的需求直接發送給書恩經紀人進行一對一快速排程？`);
-    
-    if (shouldOpenLine && contact && contact.lineUrl) {
-      window.open(contact.lineUrl, "_blank");
-    }
-    showToast("已收到您的預約需求，書恩將於 24 小時內專人與您聯繫！");
-    form.reset();
-  });
-}
-
-/**
- * 一鍵複製 LINE ID
- */
-function initCopyLine(lineId) {
-  const copyBtn = document.getElementById("copy-line-btn");
-  if (!copyBtn) return;
-
-  copyBtn.addEventListener("click", async () => {
-    try {
-      if (navigator.clipboard) {
-        await navigator.clipboard.writeText(lineId);
-        showToast(`已成功複製 LINE ID：${lineId}`);
-      } else {
-        showToast(`LINE ID：${lineId}`);
-      }
-    } catch (err) {
-      showToast(`LINE ID：${lineId}`);
-    }
-  });
-}
-
-/**
- * 手機版導航選單切換
- */
-function initMobileMenu() {
-  const btn = document.getElementById("mobile-menu-btn");
-  const menu = document.getElementById("mobile-menu");
-  if (!btn || !menu) return;
-
-  btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-  });
-
-  menu.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      menu.classList.add("hidden");
+  // 初始化分類切換按鈕事件
+  const tabButtons = document.querySelectorAll("#property-tabs .tab-btn");
+  tabButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const category = btn.getAttribute("data-filter");
+      window.filterPropertiesCategory(category, btn);
     });
   });
-}
 
-/**
- * Toast 提示條顯示
- */
-function showToast(message) {
-  const toast = document.getElementById("toast");
-  const toastMsg = document.getElementById("toast-message");
-  if (!toast || !toastMsg) return;
+  // 手機選單切換
+  const mobileBtn = document.getElementById("mobile-menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  if (mobileBtn && mobileMenu) {
+    mobileBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  }
 
-  toastMsg.textContent = message;
-  toast.classList.remove("opacity-0", "-translate-y-4", "pointer-events-none");
-  toast.classList.add("opacity-100", "translate-y-0");
-
-  setTimeout(() => {
-    toast.classList.remove("opacity-100", "translate-y-0");
-    toast.classList.add("opacity-0", "-translate-y-4", "pointer-events-none");
-  }, 3000);
-}
-
-function setElementText(id, text) {
-  const el = document.getElementById(id);
-  if (el && text) el.textContent = text;
-}
-
-function setElementHref(id, href) {
-  const el = document.getElementById(id);
-  if (el && href) el.href = href;
-}
+  // 🚀 啟動 591 雲端即時同步（完全零手動、自動更新）
+  autoFetchLive591();
+});
